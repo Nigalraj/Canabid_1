@@ -1,0 +1,259 @@
+.bg-header{
+    background-image: linear-gradient(to bottom right,  #0d636a, #29867f);
+}
+.vr_1{
+    color: lightcyan;
+    opacity: 1 !important;
+    height: 35px;
+}
+.vr_2{
+    color: rgb(15, 13, 13);
+    opacity: 1 !important;
+    width: 2px !important;
+    height: 13px;
+}
+.live{
+    color:white;
+    font-size: 11px;
+    text-decoration: none;
+}
+.live_1{
+    font-size: 13px;
+}
+.green_id:hover{
+    background-image: linear-gradient(to bottom right,  #1eb592, #4aca6a);
+    border-radius: 5px;
+}
+.green_id_1{
+    background-image: linear-gradient(to bottom right,  #1eb592, #4aca6a);
+    font-size: 13px;
+}
+.gray{
+    color: gray;
+}
+.edit{
+    color: #52c6ac;
+}
+.place::placeholder{
+    color: #d0d1d1 !important;
+    font-size: 12px;
+}
+.home{
+    font-size: 13px;
+}
+.bg-gray{
+    background-color: #d0dde0;
+}
+.green_br{
+    border: #46c86e 1px solid;
+}
+.card{
+    box-shadow: 0 0 0.1em 0.1em rgba(0, 0, 0, 0.105);
+}
+.will{
+    color: #5ba15e;
+}
+@media screen and (min-width: 320px) {
+    .bg_image{
+        background-image: url(/assets/bgimg.jpeg);
+        height: 100px;
+    }
+    .overlay{
+        width: 100%;
+        height: 100%;
+        color: black;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    } 
+}
+@media screen and (min-width:768px) {
+    .card_4{
+        width: 270px;
+        height: 1000px !important;
+    }
+    .card_5{
+        width: 200px;
+        height: 310px !important;
+    }
+    .card_8{
+        width: 250px !important;
+        height: 325px !important;
+    }
+    .feed{
+        font-size: 13px;
+    }
+}
+@media screen and (min-width: 992px) {
+    .return_padding{
+        padding-top: 50px !important;
+    }
+    .card_1{
+        width: 600px;
+    }
+    .card_2{
+        width: 297px;
+    }
+    .bg_image{
+        background-image: url(/assets/bgimg.jpeg);
+        height: 170px;
+    }
+    .card_10{
+        width: 278px;
+    }
+    .overlay{
+        width: 100%;
+        height: 100%;
+        color: black;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    .card_4{
+        width: 300px;
+    }
+    .card_6{
+        width: 800px;
+    }
+    .card_7{
+        width: 200px;
+        height: 330px !important;
+    }
+    .card_9{
+        width: 250px !important;
+        height: 335px !important;
+    }
+    .card_2{
+        width: 298px;
+    }
+    .head_pad{
+        padding-left: 34px !important;
+    }
+    .move_2{
+        position: relative;
+        bottom: 180px;
+        left: 175px;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .card_10{
+        width: 360px;
+    }
+    .return_padding{
+        padding-top: 80px !important;
+    }
+    .card_1{
+        width: 850px;
+    }
+    .card_7{
+        width: 250px;
+        height: 330px !important;
+    } 
+    .card_2{
+        width: 357px;
+    }
+    .move_2{
+        position: relative;
+        bottom: 180px;
+        left: 220px;
+    }
+}
+@media screen and (min-width: 1400px) {
+    .container{
+        max-width: 1175px !important;
+    }
+    .card_1{
+        width: 800px;
+    }
+    .card_2{
+        width: 364px;
+    }
+    .card_10{
+        width: 343px ;
+    }
+    .card_13{
+        width: 1120px;
+    }
+    .cont{
+        max-width: 11207px;
+    }
+    .move_2{
+        position: relative;
+        bottom: 180px;
+        left: 220px;
+    }
+}
+.you{
+    font-size: 15px;
+}
+.footer{
+    background-color:  #146473;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.apparels{
+    font-size: 12px;
+}
+.dollars{
+    font-size: 12px;
+}
+.dollars_color{
+    color: #0b636a;
+}
+.card_5{
+    width: 200px;
+    height: 310px !important;
+}
+.off{
+    background-color: #146473;
+}
+hr.order_hr{
+    height: 2px !important;
+    background: #a6abac;
+}
+.lorem{
+    font-size: 13px;
+}
+.input:checked{
+    accent-color: #1e7876;
+}
+.quick{
+    font-size: 20px;
+}
+.center {
+    border: 1px solid #1e7876;
+    background: #b8d4d4;
+    width: 27px;
+    height: 27px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+ }
+body{
+    background-color:  #f7f7f7 !important;
+}
+.bg_off{
+    background-image: linear-gradient(to bottom right,  #0d636a, #29867f);
+}
+.f_s{
+    font-size: 14px;
+}
+.fp{
+    height: 33px;
+}
+.hs{
+    height: 33px;
+}
+.move{
+    position: relative;
+    right: 33px !important;
+}
+.move_1{
+    position: relative;
+    left: 33px;
+}

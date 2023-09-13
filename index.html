@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+</head>
+<body class="vh-100 d-flex flex-column ">
+    <div class="bg-header  d-none d-lg-block">
+        <div class="container d-flex align-items-center py-2 pt-3 head_pad" >
+            <div>
+                <img src="/assets/logo.png" alt="" width="225">
+            </div>
+            <div class="input-group ms-4">
+                <input type="text" class="border-0 rounded-start ps-3 place d-xl-none fp pb-1" placeholder="Search by category..."  >
+                <span class="input-group-text rounded-end d-xl-none hs"  style="background-color: #21b397; "id="basic-addon2">
+                    <iconify-icon icon="mingcute:search-line" style="color: white;" class=""></iconify-icon>
+                </span>
+                <input type="text" class="border-0 rounded-start ps-3  place d-lg-none d-xl-block fp pb-1" placeholder="Search by category, product name...." size="50">
+                <span class="input-group-text rounded-end d-lg-none d-xl-block hs"  style="background-color: #21b397; "id="basic-addon2">
+                    <iconify-icon icon="mingcute:search-line" style="color: white;"></iconify-icon>
+                </span>
+                <div class="d-flex ms-3">
+                    <div>
+                        <iconify-icon icon="solar:phone-linear" style="color: white;" width="25" class="mt-2"></iconify-icon>
+                    </div>
+                    <div class="text-white d-flex  flex-column pe-4 ps-2">
+                        <a class="live" href="/index_1.html">Live Chat or:</a>
+                        <span class="live_1">1800 91826389</span>
+                    </div>
+                    <div>
+                        <span class="vr vr_1 "></span>
+                    </div>
+                    <div class="text-white  d-flex flex-column ps-4">
+                        <span class="live">Hello Sign in/</span>
+                        <span class="live_1">Account <iconify-icon icon="gridicons:dropdown" style="color: white;"></iconify-icon></span>
+                    </div>
+                    <div class="text-white d-flex ps-3 align-items-center ms-3">
+                        <iconify-icon icon="bytesize:cart" style="color: white;" width="19"></iconify-icon>
+                        <span class="ps-1">Cart</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container d-flex align-items-center text-white mt-2">
+            <span class="d-flex align-items-center px-4 green_id p-2">
+                <iconify-icon icon="fe:bar" style="color: white;" width="25"></iconify-icon>
+                <span class="active ms-1">All Categories</span>
+            </span>
+            <span class="px-4 green_id p-2">Accessories</span>
+            <span class="px-4 green_id p-2">Apparels</span>
+            <span class="px-4 green_id p-2">Marijuana Concentrates</span>
+            <span class="px-4 green_id p-2">About us</span>
+            <span class="px-4 green_id p-2">Contact us</span>
+        </div>
+    </div>
+    <div class="bg-header d-md-none">
+        <div class="container d-lg-none">
+            <div class="">
+                <div class="d-flex justify-content-between align-items-center mx-4">
+                    <img src="/assets/logo.png" alt="" width="200" >
+                    <span class="">
+                        <iconify-icon icon="pepicons-pop:menu-circle-filled" style="color: white;" class="mt-3" width="25" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample"></iconify-icon>
+                    </span>
+                </div>
+                <div class="offcanvas offcanvas-start bg_off" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                    <div class="offcanvas-header ">
+                        <img src="/assets/logo.png" alt="" width="200">
+                        <button type="button" class="btn-close primary" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body mx-0 p-0">
+                        <div class="text-white ">
+                            <p class="green_id p-2 m-0 ps-3">All Categories</p>
+                            <p class="green_id p-2 m-0 ps-3">Accessories</p>
+                            <p class="green_id p-2 m-0 ps-3">Apparels</p>
+                            <p class="green_id p-2 m-0 ps-3">Marijuana Concentrates</p>
+                            <p class="green_id p-2 m-0 ps-3">About us</p>
+                            <p class="green_id p-2 m-0 ps-3">Contact us</p>
+                            <p class="green_id p-2 m-0 ps-3">Log in</p>
+                            <p class="green_id p-2 m-0 ps-3">Sign up</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="input-group px-3 py-1 d-flex mt-2 d-md-flex d-lg-none">
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control place d-md-none " placeholder="Search by category..." aria-label="Recipient's username" aria-describedby="basic-addon2">
+                    <input type="text" class="form-control place d-none d-md-block rounded-start" placeholder="Search by category, product name...." aria-label="Recipient's username" aria-describedby="basic-addon2">
+                    <span class="input-group-text" id="basic-addon2" style="background-color: #21b397;">
+                        <iconify-icon icon="mingcute:search-line" style="color: white;" class=""></iconify-icon>
+                    </span>
+                </div>
+            </div>
+            <div class="d-flex justify-content-evenly pb-2">
+                <iconify-icon icon="uil:phone" style="color: white;" width="25"></iconify-icon>
+                <span class="vr vr_1"></span>
+                <iconify-icon icon="bytesize:cart" style="color: white;" width="25"></iconify-icon>
+                <span class="vr vr_1"></span>
+                <div class="d-flex">
+                    <iconify-icon icon="iconoir:profile-circle" style="color: white;" width="25"></iconify-icon>
+                    <iconify-icon icon="gridicons:dropdown" style="color: white;" width="25"></iconify-icon>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bg-header d-none d-md-block d-lg-none">
+        <div class="container py-3 px-4">
+            <div class="d-flex">
+                <div>
+                    <img src="/assets/logo.png" alt="" width="225">
+                </div>
+                <div class="input-group ps-3 py-1 d-flex mt-2 d-md-flex d-lg-none">
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control place d-md-none" placeholder="Search by category..." aria-label="Recipient's username" aria-describedby="basic-addon2">
+                        <input type="text" class="form-control place d-none d-md-block rounded-start hs pb-2" placeholder="Search by category, product name...." aria-label="Recipient's username" aria-describedby="basic-addon2">
+                        <span class="input-group-text" id="basic-addon2" style="background-color: #21b397;">
+                            <iconify-icon icon="mingcute:search-line" style="color: white;" class=""></iconify-icon>
+                        </span>
+                    </div>
+                </div>
+                <div class="text-white d-flex align-items-center ms-3">
+                    <iconify-icon icon="bytesize:cart" style="color: white;" width="19"></iconify-icon>
+                    <span class="ps-1 pe-3">Cart</span>
+                    <iconify-icon icon="pepicons-pop:menu-circle-filled" style="color: white;" class="" width="25" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExampl" aria-controls="offcanvasExample"></iconify-icon>
+                </div>
+                <div class="offcanvas offcanvas-start bg_off" tabindex="-1" id="offcanvasExampl" aria-labelledby="offcanvasExampleLabel">
+                    <div class="offcanvas-header ">
+                        <img src="/assets/logo.png" alt="" width="200">
+                        <button type="button" class="btn-close primary" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body mx-0 p-0">
+                        <div class="text-white ">
+                            <p class="green_id p-2 m-0 ps-3">All Categories</p>
+                            <p class="green_id p-2 m-0 ps-3">Accessories</p>
+                            <p class="green_id p-2 m-0 ps-3">Apparels</p>
+                            <p class="green_id p-2 m-0 ps-3">Marijuana Concentrates</p>
+                            <p class="green_id p-2 m-0 ps-3">About us</p>
+                            <p class="green_id p-2 m-0 ps-3">Contact us</p>
+                            <p class="green_id p-2 m-0 ps-3">Log in</p>
+                            <p class="green_id p-2 m-0 ps-3">Sign up</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex align-items-center justify-content-between">
+                <div class="d-flex align-items-center text-white ">
+                    <iconify-icon icon="solar:phone-linear" style="color: white;" width="25" class="mt-2"></iconify-icon>
+                    <span class="ms-2">Live chat or: 1800 91826389</span>
+                </div>
+                <div class="text-white  d-flex flex-column ps-4">
+                    <span class="">Hello Sign in/</span>
+                    <span class="">Account <iconify-icon icon="gridicons:dropdown" style="color: white;"></iconify-icon></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="bg-header  pt-2 d-lg-none ">
+     <div class="container">
+        <div class="text-center d-flex ms-5 d-md-none">
+          
+            <div>
+                <img src="/assets/logo.png" alt="" width="200">
+            </div>
+            <div>
+                <iconify-icon icon="pepicons-pop:menu-circle-filled" style="color: white;" class="ms-4 mt-2" width="25" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample"></iconify-icon>
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                    <div class="offcanvas-header off">
+                      <img src="/assets/logo.png" alt="" width="200">
+                      <button type="button" class="btn-close " data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                      <div class="">
+                        <p class="">All Categories</p>
+                        <p>Accessories</p>
+                        <p>Apparels</p>
+                        <p>Marijuana Concentrates</p>
+                        <p>About us</p>
+                        <p>Contact us</p>
+                        <p>Log in</p>
+                        <p>Sign up</p>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-center d-none d-md-block">
+            <div>
+                <img src="/assets/logo.png" alt="" width="200">
+            </div> 
+        </div>
+        <div class="input-group ps-4 py-3 d-md-none">
+            <input type="text" size="24" class="border-0 rounded-start ps-3 py-1" placeholder="Search by...."  >
+            <span class="input-group-text rounded-end "  style="background-color: #21b397; "id="basic-addon2">
+                <iconify-icon icon="mingcute:search-line" style="color: white;" class=""></iconify-icon>
+            </span>
+        </div>
+        <div class="input-group ps-4 py-3 d-flex justify-content-center d-none d-md-flex">
+            <input type="text" size="50" class="border-0 rounded-start ps-3 py-1" placeholder="Search by...."  >
+            <span class="input-group-text rounded-end "  style="background-color: #21b397; "id="basic-addon2">
+                <iconify-icon icon="mingcute:search-line" style="color: white;" class=""></iconify-icon>
+            </span>
+        </div>
+        <div class="d-flex container ms-md-5 ps-md-5">
+            <div class="mx-5 mx-md-5 my-1 d-md-flex">
+                <div class="d-flex ms-md-5 ps-md-5">
+                    <span class="d-flex align-items-center">
+                        <iconify-icon icon="ph:phone-light" style="color: white;" width="25"></iconify-icon>
+                    </span>
+                    <div class="d-flex flex-column text-white">
+                        <span class="live">Live Chat or :</span>
+                        <span class="live_1">1800 91826389</span>
+                    </div>
+                </div>
+                <div class="d-flex ms-4 ms-md-5 mt-3 mt-md-0">
+                    <div class="d-flex flex-column text-white">
+                        <span class="live">Hello Sign in/</span>
+                        <div class="d-flex align-items-center live_1">
+                            <span>Account</span>
+                            <iconify-icon icon="gridicons:dropdown" style="color: white;" width="20" ></iconify-icon>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex align-items-center text-white">
+                <iconify-icon icon="bytesize:cart" style="color: white;" width="25"></iconify-icon>
+                <span>Cart</span>
+                <div class="d-none d-md-block">
+                    <iconify-icon icon="streamline:interface-setting-menu-vertical-navigation-vertical-three-circle-button-menu-dots" style="color: white;" class="ms-4 mt-2" width="25"></iconify-icon>
+                </div>
+            </div>
+        </div>
+     </div>
+    </div>  -->
+    <div class="grow">
+        <div class=" container">
+     <div class="d-lg-flex">
+        <div class="card card_1 border-0 mt-3 px-3 rounded-4 pb-3">
+            <div>
+                <div class="d-flex flex-row justify-content-between px-2 my-3 align-items-center">
+                <span class="fw-semibold fs_1">Select a delivery address</span>
+                <span class="fw-semibold green_id_1 p-1 px-md-3 py-2 ms-1 text-white rounded-3 fas">Add New</span>
+            </div>
+            <div class=" d-none d-md-block pe-4 ps-2">
+                <div class="d-flex ">
+                    <div class="card col-6 rounded-4 px-3 pe-xxl-0 pb-3">
+                        <div class="d-flex mt-3 ">
+                            <div class="col-1 ms-2">
+                                <input class="input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                            </div>
+                            <div class="col-7 ms-2 d-flex flex-column">
+                                <span class="fw-semibold">Jack Jennas</span>
+                            </div>
+                            <div class="col-3 ms-3">
+                                <span class="bg-gray home p-2 rounded-2 fw-semibold ms-xl-4 ms-xxl-0">Home</span>
+                            </div>
+                        </div>
+                        <div class="d-flex ms-lg-3 ms-4 ms-xl-4 ps-3 home gray flex-column mt-2 ">
+                            <span class="mt-2">Address: 8426 James Lane south san</span>
+                            <span >Francisco, CA 94080</span>
+                            <span class="mt-1">Pin Code: +380</span>
+                            <span >Phone: +380 (0564) 53 - 29 -68</span>
+                            <div class="mt-2">
+                                <a class="edit">Edit</a>
+                                <span class="vr vr_2 mx-3"></span>
+                                <a class="edit">Delete</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card col-6 ms-3 rounded-4 px-3 pe-xxl-0">
+                        <div class="d-flex mt-3 ">
+                            <div class="col-1 ms-2">
+                                <input class="input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                            </div>
+                            <div class="col-7 ms-2 d-flex flex-column">
+                                <span class="fw-semibold">Jack Jennas</span>
+                            </div>
+                            <div class="col-3 ms-3">
+                                <span class="bg-gray home p-2 rounded-2 fw-semibold ms-xl-4 ms-xxl-0">Office</span>
+                            </div>
+                        </div>
+                        <div class="d-flex ms-lg-3 ms-4 ms-xl-4 ps-3 home gray flex-column mt-2 ">
+                            <span class="mt-2">Address: 8426 James Lane south san</span>
+                            <span >Francisco, CA 94080</span>
+                            <span class="mt-1">Pin Code: +380</span>
+                            <span >Phone: +380 (0564) 53 - 29 -68</span>
+                            <div class="mt-2">
+                                <a class="edit">Edit</a>
+                                <span class="vr vr_2 mx-3"></span>
+                                <a class="edit">Delete</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="card rounded-4 d-md-none pb-3 border-0">
+                <div class="d-flex mt-3">
+                    <div class="col-1 ms-2">
+                        <input class="input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    </div>
+                    <div class="col-6 ms-2 d-flex flex-column">
+                        <span class="fw-semibold">Jack Jennas</span>
+                    </div>
+                    <div class="col-3 ms-4">
+                        <span class="bg-gray home p-2 rounded-3 fw-semibold">Home</span>
+                    </div>
+                </div>
+                <div class="d-flex ms-3 ps-3 home gray flex-column mt-2 ">
+                    <span class="mt-2 ps-1">Address: 8426 James Lane south san</span>
+                    <span class="ps-1">Francisco, CA 94080</span>
+                    <span class="mt-1 ps-1">Pin Code: +380</span>
+                    <span class="ps-1">Phone: +380 (0564) 53 - 29 -68</span>
+                    <div class="mt-2 ps-1">
+                        <a class="edit">Edit</a>
+                        <span class="vr vr_2 mx-3"></span>
+                        <a class="edit">Delete</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card border-0 rounded-4 d-md-none mt-3 pb-3 ">
+                <div class="d-flex mt-3">
+                    <div class="col-1 ms-2">
+                        <input class="input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    </div>
+                    <div class="col-6 ms-2 d-flex flex-column">
+                        <span class="fw-semibold">Jack Jennas</span>
+                    </div>
+                    <div class="col-3 ms-4">
+                        <span class="bg-gray home p-2 rounded-3 fw-semibold">Office</span>
+                    </div>
+                </div>
+                <div class="d-flex ms-3 ps-3 home gray flex-column mt-2 ">
+                    <span class="mt-2 ps-1">Address: 8426 James Lane south san</span>
+                    <span class="ps-1">Francisco, CA 94080</span>
+                    <span class="mt-1 ps-1">Pin Code: +380</span>
+                    <span class="ps-1">Phone: +380 (0564) 53 - 29 -68</span>
+                    <div class="mt-2 ps-1">
+                        <a class="edit">Edit</a>
+                        <span class="vr vr_2 mx-3"></span>
+                        <a class="edit">Delete</a>
+                    </div>
+                </div>  
+            </div>
+            <div class="d-flex flex-column text-center mt-3 d-md-none ">
+                <span class="return rounded-4 fw-semibold p-2">Return to shopping</span>
+                <span class="green_id_1 rounded-4 mt-3 text-white p-2">Payment</span>
+            </div>
+            <div class="mt-5 return_padding text-end d-none d-md-block pb-3 pe-2 ">
+                <span class=" rounded-4 return fw-semibold pt-1 pb-2 px-4">Return to shopping</span>
+                <span class="green_id_1 rounded-4 mt-3 text-white py-2 px-4  ms-2 text-center fas">Payment</span>
+            </div>
+        </div>
+        <div class="d-md-none d-lg-block">
+            <div class="card border-0 rounded-4 mt-3 card_14 py-3 fw-semibold ms-lg-4">
+                <h5 class="px-3">Order Summary</h5>
+                <hr class="order_hr">
+                <div class="px-3 d-flex justify-content-between">
+                    <span>Melatonin x 1</span>
+                    <span>$960.00</span>
+                </div>
+                <div class="px-3 d-flex justify-content-between pt-2">
+                    <span>Bird Hearts x 1</span>
+                    <span>$250.00</span>
+                </div>
+                <div class="px-3 d-flex justify-content-between pt-2">
+                    <span>Men T-shirt x 1</span>
+                    <span>$200.00</span>
+                </div>
+                <hr class="order_hr">
+                <div class="px-3 d-flex justify-content-between pt-2">
+                    <span>Subtotal</span>
+                    <span>$1,410.00</span>
+                </div>
+                <div class="px-3 d-flex justify-content-between pt-2">
+                    <span>Discount</span>
+                    <span class="will">(-)61.00</span>
+                </div>
+                <div class="px-3 d-flex justify-content-between pt-2">
+                    <span>Shipping</span>
+                    <span>$50.00</span>
+                </div>
+                <hr class="order_hr">
+                <div class="px-3 d-flex justify-content-between pt-2">
+                    <span>Total(USD)</span>
+                    <span>$1399.00</span>
+                </div>
+                <div class="px-3 py-2">
+                    <span class=" you will">You will save $61 on this order</span>
+                </div>
+            </div>
+        </div>
+        <div class=" d-md-flex  ">
+            <div class="card col rounded-4 mt-3 py-3 fw-semibold ms-lg-4 d-none d-md-block d-lg-none">
+                    <span class="px-3">Order Summary</span>
+                    <hr>
+                    <div class="px-3 d-flex justify-content-between">
+                        <span>Melatonin x 1</span>
+                        <span>$960.00</span>
+                    </div>
+                    <div class="px-3 d-flex justify-content-between pt-2">
+                        <span>Bird Hearts x 1</span>
+                        <span>$250.00</span>
+                    </div>
+                    <div class="px-3 d-flex justify-content-between pt-2">
+                        <span>Men T-shirt x 1</span>
+                        <span>$200.00</span>
+                    </div>
+                    <hr>
+                    <div class="px-3 d-flex justify-content-between pt-2">
+                        <span>Subtotal</span>
+                        <span>$1,410.00</span>
+                    </div>
+                    <div class="px-3 d-flex justify-content-between pt-2">
+                        <span>Discount</span>
+                        <span class="will">(-)61.00</span>
+                    </div>
+                    <div class="px-3 d-flex justify-content-between pt-2">
+                        <span>Shipping</span>
+                        <span>$50.00</span>
+                    </div>
+                    <hr>
+                    <div class="px-3 d-flex justify-content-between pt-2">
+                        <span>Total(USD)</span>
+                        <span>$1399.00</span>
+                    </div>
+                    <div class="px-3 pt-2">
+                        <span class="will">You will save $61 on this order</span>
+                    </div>
+            </div>
+            <div class="d-flex flex-column ms-md-2 mx-0 px-0 d-lg-none">
+                <div class="card col-md mt-md-3 border-0 col mx-1 mt-3 rounded-4 pt-3 mt-lg-0 ps-3 pe-2">
+                    <div class="ms-2 fw-semibold">Book By Phone</div>
+                    <div class="d-flex mt-2 mb-3">
+                      <iconify-icon icon="gridicons:phone" style="color: #11676a;" width="45"></iconify-icon>
+                      <div class="d-flex flex-column">
+                          <span class="fw-semibold">+1 123-456-7890</span>
+                          <span class="home gray">Booking time: 08:00AM - 10:00 PM</span>
+                      </div>
+                    </div>
+                 </div>
+                 <div class="card col-md mt-md-3 border-0 col mx-1 mt-3 rounded-4 pt-3 mt-lg-0 ps-3 ">
+                  <div class="ms-2 fw-semibold">Give your Feedback</div>
+                  <div class="d-flex mt-2 mb-3 ms-1">
+                    <iconify-icon icon="gridicons:mail" style="color: #11676a;" width="40"></iconify-icon>
+                    <div class="d-flex flex-column ms-2">
+                        <span class="fw-semibold">feedback@canabid.com</span>
+                        <span class="home gray">help us in improve!</span>
+                    </div>
+                  </div>
+               </div>
+               <div class="card col-md mt-md-3 border-0 col mx-1 mt-3 rounded-4 pt-3 mt-lg-0 ps-3">
+                  <div class="ms-2 fw-semibold">Service and Support</div>
+                  <div class="d-flex mt-2 mb-3 ms-2">
+                    <iconify-icon icon="ri:customer-service-2-line" style="color: #11676a;" width="40"></iconify-icon>
+                    <div class="d-flex flex-column ms-2">
+                        <span class="fw-semibold">Support Centre</span>
+                        <span class="home gray">Get your doubts cleared</span>
+                    </div>
+                  </div>
+               </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    <div class="mt-3 d-none d-lg-block container">
+        <div class="d-flex">
+            <div class="card card_10 ps-2 ps-xl-4 pt-2 rounded-4">
+                <div class="ms-2 fw-semibold">Book By Phone</div>
+                    <div class="d-flex mt-2 mb-3">
+                      <iconify-icon icon="gridicons:phone" style="color: #11676a;" width="45"></iconify-icon>
+                      <div class="d-flex flex-column ms-1">
+                          <span class="fw-semibold">+1 123-456-7890</span>
+                          <span class="home gray">Booking time: 08:00AM - 10:00 PM</span>
+                      </div>
+                    </div>
+            </div>
+            <div class="card card_10 ms-3  ps-xl-4 ps-2 pt-2 rounded-4">
+                <div class="ms-2 fw-semibold">Give your Feedback</div>
+                  <div class="d-flex mt-2 mb-3 ms-1">
+                    <iconify-icon icon="gridicons:mail" style="color: #11676a;" width="40"></iconify-icon>
+                    <div class="d-flex flex-column ms-2">
+                        <span class="fw-semibold">feedback@canabid.com</span>
+                        <span class="home gray">Help us improve!</span>
+                    </div>
+                  </div>
+            </div>
+            <div class="card card_10 ms-3 ps-xl-4 ps-2 pt-2 rounded-4">
+                <div class="ms-2 fw-semibold">Service and Support</div>
+                  <div class="d-flex mt-2 mb-3 ms-1">
+                    <iconify-icon icon="ri:customer-service-2-line" style="color: #11676a;" width="35"></iconify-icon>
+                    <div class="d-flex flex-column ms-2">
+                        <span class="fw-semibold">Support Centre</span>
+                        <span class="home gray">Get your doubts cleared</span>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="footer mt-3 d-md-none">
+        <div class="text-center pt-4">
+            <img src="/assets/logo.png" alt="" width="225">
+        </div>
+        <div class="d-flex text-white container flex-column mt-4">
+            <span class="d-flex align-items-center lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur
+            </span>
+            <div class="d-flex flex-column mt-4 lorem">
+                <h5>Quick Links</h5>
+                <span class="mt-2">Seller registration</span>
+                <span class="mt-2">Terms and conditions</span>
+                <span class="mt-2">About us</span>
+                <span class="mt-2">Contact us</span>
+            </div>
+            <div class="d-flex flex-column mt-4">
+                <h5>Find us</h5>
+                <div class="d-flex align-items-center mt-1">
+                    <iconify-icon icon="foundation:mail" style="color: white;" width="20"></iconify-icon>
+                    <span class="ps-2 lorem">support@canabid.com</span>
+                </div>
+                <div class="d-flex align-items-center mt-1">
+                    <iconify-icon icon="ic:round-phone" style="color: white;" class="mt-2 " width="20"></iconify-icon>
+                    <span class="ps-2 mt-2 lorem">+1 123-456-7890</span>
+                </div>
+                <div class="mt-4">
+                    <h5>Connect with us</h5>
+                    <div class="d-flex pt-2">
+                        <iconify-icon icon="basil:facebook-solid" style="color: white;" width="25"></iconify-icon>
+                        <iconify-icon icon="fe:google-plus" style="color: white;" width="30" height="30" class="ms-3"></iconify-icon>
+                        <iconify-icon icon="jam:linkedin" style="color: white;" width="25" class="ms-3"></iconify-icon>
+                        <iconify-icon icon="ant-design:twitter-outlined" style="color: white;" width="28" class="ms-3 "></iconify-icon>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="text-center lorem d-flex flex-column lorem">
+                <span>&copy;2022 canabid.com, all right reserved</span>
+                <a href="" class="text-white my-1 mb-4">Privacy policy</a>
+            </div>
+        </div>
+    </div>
+    <div class="footer mt-3 text-white  d-none d-md-block ">
+        <div class="container pt-4">
+            <img src="/assets/logo.png" alt="" width="200">
+            <div class="d-flex lorem justify-content-between">
+                <div class="col-lg-4 col-5 mt-3">
+                    <span class="lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                        do eiusmod tempor incididunt ut labore et dolore magna
+                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                        ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse
+                        cillum dolore eu fugiat nulla pariatur
+                    </span>
+                </div>
+                <div class="col-lg-2 d-flex flex-column mt-1">
+                        <span class="quick fw-semibold">Quick Links</span>
+                        <span class="mt-2">Seller registration</span>
+                        <span class="mt-2">Terms and conditions</span>
+                        <span class="mt-2">About us</span>
+                        <span class="mt-2">Contact us</span>
+                </div>
+                <div class="d-flex col-lg-3  flex-column mt-1">
+                    <span class="quick fw-semibold">Find us</span>
+                    <div class="d-flex align-items-center lorem mt-2">
+                        <iconify-icon icon="foundation:mail" style="color: white;" width="20"></iconify-icon>
+                        <span class="ps-2">support@canabid.com</span>
+                    </div>
+                    <div class="d-flex align-items-center lorem mt-2">
+                        <iconify-icon icon="ic:round-phone" style="color: white;" class="mt-2 " width="20"></iconify-icon>
+                        <span class="ps-2 mt-2">+1 123-456-7890</span>
+                    </div>
+                    <div class="mt-4">
+                        <h5>Connect with us</h5>
+                        <div class="d-flex align-items-center">
+                            <iconify-icon icon="basil:facebook-solid" style="color: white;" width="26"></iconify-icon>
+                            <iconify-icon icon="fe:google-plus" style="color: white;" width="26" class="ms-3"></iconify-icon>
+                            <iconify-icon icon="jam:linkedin" style="color: white;" width="26" class="ms-3"></iconify-icon>
+                            <iconify-icon icon="ant-design:twitter-outlined" style="color: white;" width="26" class="ms-3"></iconify-icon>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="d-flex justify-content-between pb-5 lorem">
+                <span>&copy;2022 canabid.com, all right reserved</span>
+                <span><a href="" class="text-white my-1 mb-4">Privacy policy</a></span>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="footer mt-3 d-md-none">
+        <div class="text-center pt-4">
+            <img src="/assets/logo.png" alt="" width="225">
+        </div>
+        <div class="d-flex text-white container flex-column mt-4">
+            <span class="d-flex align-items-center lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur
+            </span>
+            <div class="d-flex flex-column mt-4 lorem">
+                <h5>Quick Links</h5>
+                <span class="mt-2">Seller registration</span>
+                <span class="mt-2">Terms and conditions</span>
+                <span class="mt-2">About us</span>
+                <span class="mt-2">Contact us</span>
+            </div>
+            <div class="d-flex flex-column mt-4">
+                <h5>Find us</h5>
+                <div class="d-flex align-items-center mt-1">
+                    <iconify-icon icon="foundation:mail" style="color: white;" width="20"></iconify-icon>
+                    <span class="ps-2 lorem">support@canabid.com</span>
+                </div>
+                <div class="d-flex align-items-center mt-1">
+                    <iconify-icon icon="ic:round-phone" style="color: white;" class="mt-2 " width="20"></iconify-icon>
+                    <span class="ps-2 mt-2 lorem">+1 123-456-7890</span>
+                </div>
+                <div class="mt-4">
+                    <h5>Connect with us</h5>
+                    <div class="d-flex pt-2">
+                        <iconify-icon icon="basil:facebook-solid" style="color: white;" width="25"></iconify-icon>
+                        <iconify-icon icon="fe:google-plus" style="color: white;" width="30" height="30" class="ms-3"></iconify-icon>
+                        <iconify-icon icon="jam:linkedin" style="color: white;" width="25" class="ms-3"></iconify-icon>
+                        <iconify-icon icon="ant-design:twitter-outlined" style="color: white;" width="28" class="ms-3 "></iconify-icon>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="text-center lorem d-flex flex-column">
+                <span>&copy;2022 canabid.com, all right reserved</span>
+                <a href="" class="text-white my-1 mb-4">Privacy policy</a>
+            </div>
+        </div>
+    </div>
+    <div class="footer mt-3 text-white  d-none d-md-block ">
+        <div class="container pt-4">
+            <img src="/assets/logo.png" alt="" width="200">
+            <div class="d-flex lorem justify-content-between">
+                <div class="col-4 mt-3">
+                    <span class="lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                        do eiusmod tempor incididunt ut labore et dolore magna
+                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                        ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse
+                        cillum dolore eu fugiat nulla pariatur
+                    </span>
+                </div>
+                <div class="col-2 d-flex flex-column mt-1">
+                        <span class="quick fw-semibold">Quick Links</span>
+                        <span class="mt-2">Seller registration</span>
+                        <span class="mt-2">Terms and conditions</span>
+                        <span class="mt-2">About us</span>
+                        <span class="mt-2">Contact us</span>
+                </div>
+                <div class="d-flex  col-md-3 col-lg-3  flex-column mt-1">
+                    <span class="quick fw-semibold">Find us</span>
+                    <div class="d-flex align-items-center lorem mt-2">
+                        <iconify-icon icon="foundation:mail" style="color: white;" width="20"></iconify-icon>
+                        <span class="ps-2">support@canabid.com</span>
+                    </div>
+                    <div class="d-flex align-items-center lorem mt-2">
+                        <iconify-icon icon="ic:round-phone" style="color: white;" class="mt-2 " width="20"></iconify-icon>
+                        <span class="ps-2 mt-2">+1 123-456-7890</span>
+                    </div>
+                    <div class="mt-4">
+                        <h5>Connect with us</h5>
+                        <div class="d-flex align-items-center">
+                            <iconify-icon icon="basil:facebook-solid" style="color: white;" width="26"></iconify-icon>
+                            <iconify-icon icon="fe:google-plus" style="color: white;" width="26" class="ms-3"></iconify-icon>
+                            <iconify-icon icon="jam:linkedin" style="color: white;" width="26" class="ms-3"></iconify-icon>
+                            <iconify-icon icon="ant-design:twitter-outlined" style="color: white;" width="26" class="ms-3"></iconify-icon>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="d-flex justify-content-between pb-5">
+                <span>&copy;2022 canabid.com, all right reserved</span>
+                <span><a href="" class="text-white my-1 mb-4">Privacy policy</a></span>
+            </div>
+        </div>
+    </div> -->
+</body>
+</html>

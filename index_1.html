@@ -1,0 +1,1628 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style_1.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+</head>
+<body>
+    <div class="bg-header  d-none d-lg-block">
+        <div class="container d-flex align-items-center py-2 pt-3 head_pad">
+            <div>
+                <img src="/assets/logo.png" alt="" width="225">
+            </div>
+            <div class="input-group ms-4">
+                <input type="text" class="border-0 rounded-start ps-3 place py-1 d-xl-none pb-2" placeholder="Search by category..."  >
+                <span class="input-group-text rounded-end d-xl-none "  style="background-color: #21b397; "id="basic-addon2">
+                    <iconify-icon icon="mingcute:search-line" style="color: white;" class=""></iconify-icon>
+                </span>
+                <input type="text" class="border-0 rounded-start ps-3 place py-1 d-lg-none d-xl-block hs pb-2" placeholder="Search by category, product name...." size="50">
+                <span class="input-group-text rounded-end d-lg-none d-xl-block hs"  style="background-color: #21b397; "id="basic-addon2">
+                    <iconify-icon icon="mingcute:search-line" style="color: white;" class=""></iconify-icon>
+                </span>
+                
+                <div class="d-flex ms-3">
+                    <div>
+                        <iconify-icon icon="solar:phone-linear" style="color: white;" width="25" class="mt-2"></iconify-icon>
+                    </div>
+                    <div class="text-white d-flex  flex-column pe-4 ps-2">
+                        <a class="live" href="/index_1.html">Live Chat or:</a>
+                        <span class="live_1">1800 91826389</span>
+                    </div>
+                    <div>
+                        <span class="vr vr_1 "></span>
+                    </div>
+                    <div class="text-white  d-flex flex-column ps-4">
+                        <span class="live">Hello Sign in/</span>
+                        <span class="live_1">Account <iconify-icon icon="gridicons:dropdown" style="color: white;"></iconify-icon></span>
+                    </div>
+                    <div class="text-white d-flex ps-3 align-items-center ms-3">
+                        <iconify-icon icon="bytesize:cart" style="color: white;" width="19"></iconify-icon>
+                        <span class="ps-1">Cart</span>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <div class="container d-flex align-items-center text-white mt-2">
+            <span class="d-flex align-items-center px-4 green_id p-2">
+                <iconify-icon icon="fe:bar" style="color: white;" width="25"></iconify-icon>
+                <span class="active ms-1">All Categories</span>
+            </span>
+            <span class="px-4 green_id p-2">Accessories</span>
+            <span class="px-4 green_id p-2">Apparels</span>
+            <span class="px-4 green_id p-2">Marijuana Concentrates</span>
+            <span class="px-4 green_id p-2">About us</span>
+            <span class="px-4 green_id p-2">Contact us</span>
+        </div>
+    </div>
+    <div class="bg-header">
+        <div class="container d-md-none">
+            <div class="">
+                <div class="d-flex justify-content-between align-items-center mx-4">
+                    <img src="/assets/logo.png" alt="" width="200" >
+                    <span class="">
+                        <iconify-icon icon="pepicons-pop:menu-circle-filled" style="color: white;" class="mt-3" width="25" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample"></iconify-icon>
+                    </span>
+                </div>
+                <div class="offcanvas offcanvas-start bg_off" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                    <div class="offcanvas-header ">
+                        <img src="/assets/logo.png" alt="" width="200">
+                        <button type="button" class="btn-close primary" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body mx-0 p-0">
+                        <div class="text-white ">
+                            <p class="green_id p-2 m-0  ps-3">All Categories</p>
+                            <p class="green_id p-2 m-0  ps-3">Accessories</p>
+                            <p class="green_id p-2 m-0 ps-3">Apparels</p>
+                            <p class="green_id p-2 m-0 ps-3">Marijuana Concentrates</p>
+                            <p class="green_id p-2 m-0 ps-3">About us</p>
+                            <p class="green_id p-2 m-0 ps-3">Contact us</p>
+                            <p class="green_id p-2 m-0 ps-3">Log in</p>
+                            <p class="green_id p-2 m-0 ps-3">Sign up</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="input-group px-3 py-1 d-flex mt-2 d-md-flex d-lg-none">
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control place d-md-none pb-2" placeholder="Search by category..." aria-label="Recipient's username" aria-describedby="basic-addon2">
+                    <input type="text" class="form-control place d-none d-md-block rounded-start" placeholder="Search by category, product name...." aria-label="Recipient's username" aria-describedby="basic-addon2">
+                    <span class="input-group-text" id="basic-addon2" style="background-color: #21b397;">
+                        <iconify-icon icon="mingcute:search-line" style="color: white;" class=""></iconify-icon>
+                    </span>
+                </div>
+            </div>
+            <div class="d-flex justify-content-evenly pb-2">
+                <iconify-icon icon="uil:phone" style="color: white;" width="25"></iconify-icon>
+                <span class="vr vr_1"></span>
+                <iconify-icon icon="bytesize:cart" style="color: white;" width="25"></iconify-icon>
+                <span class="vr vr_1"></span>
+                <div class="d-flex">
+                    <iconify-icon icon="iconoir:profile-circle" style="color: white;" width="25"></iconify-icon>
+                    <iconify-icon icon="gridicons:dropdown" style="color: white;" width="25"></iconify-icon>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bg-header d-none d-md-block d-lg-none">
+        <div class="container py-3 px-4">
+            <div class="d-flex">
+                <div>
+                    <img src="/assets/logo.png" alt="" width="225">
+                </div>
+                <div class="input-group ps-3 py-1 d-flex mt-2 d-md-flex d-lg-none">
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control place d-md-none" placeholder="Search by category..." aria-label="Recipient's username" aria-describedby="basic-addon2">
+                        <input type="text" class="form-control place d-none d-md-block rounded-start pb-2" placeholder="Search by category, product name...." aria-label="Recipient's username" aria-describedby="basic-addon2">
+                        <span class="input-group-text" id="basic-addon2" style="background-color: #21b397;">
+                            <iconify-icon icon="mingcute:search-line" style="color: white;" class=""></iconify-icon>
+                        </span>
+                    </div>
+                </div>
+                <div class="text-white d-flex align-items-center ms-3">
+                    <iconify-icon icon="bytesize:cart" style="color: white;" width="19"></iconify-icon>
+                    <span class="ps-1 pe-3">Cart</span>
+                    <iconify-icon icon="pepicons-pop:menu-circle-filled" style="color: white;" class="" width="25" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExampl" aria-controls="offcanvasExample"></iconify-icon>
+                </div>
+                <div class="offcanvas offcanvas-start bg_off" tabindex="-1" id="offcanvasExampl" aria-labelledby="offcanvasExampleLabel" >
+                    <div class="offcanvas-header ">
+                        <img src="/assets/logo.png" alt="" width="200">
+                        <button type="button" class="btn-close primary" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body mx-0 p-0">
+                        <div class="text-white ">
+                            <p class="green_id p-2 m-0  ps-3">All Categories</p>
+                            <p class="green_id p-2 m-0 ps-3">Accessories</p>
+                            <p class="green_id p-2 m-0 ps-3">Apparels</p>
+                            <p class="green_id p-2 m-0 ps-3">Marijuana Concentrates</p>
+                            <p class="green_id p-2 m-0 ps-3">About us</p>
+                            <p class="green_id p-2 m-0 ps-3">Contact us</p>
+                            <p class="green_id p-2 m-0 ps-3">Log in</p>
+                            <p class="green_id p-2 m-0 ps-3">Sign up</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex align-items-center justify-content-between">
+                <div class="d-flex align-items-center text-white ">
+                    <iconify-icon icon="solar:phone-linear" style="color: white;" width="25" class="mt-2"></iconify-icon>
+                    <span class="ms-2">Live chat or: 1800 91826389</span>
+                </div>
+                <div class="text-white  d-flex flex-column ps-4">
+                    <span class="">Hello Sign in /</span>
+                    <div class="d-flex">
+                        <span class="">Account</span>
+                        <span> <iconify-icon icon="gridicons:dropdown" style="color: white;" width="18" class="pt-1 ps-1"></iconify-icon></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="bg-header  d-none d-lg-block">
+        <div class="container d-flex align-items-center py-2 pt-3">
+            <div>
+                <img src="/assets/logo.png" alt="" width="225">
+            </div>
+            <div class="input-group ms-4">
+                <input type="text" size="55" class="border-0 rounded-start ps-3 py-1" placeholder="Search by category, product name...."  >
+                <span class="input-group-text rounded-end "  style="background-color: #21b397; "id="basic-addon2">
+                    <iconify-icon icon="mingcute:search-line" style="color: white;" class=""></iconify-icon>
+                </span>
+                <div class="d-flex ms-4 align-items-center mt-lg-3 mt-xl-0">
+                    <div>
+                        <iconify-icon icon="solar:phone-linear" style="color: white;" width="25" class="mt-2"></iconify-icon>
+                    </div>
+                    <div class="text-white d-flex  flex-column pe-4 ps-2">
+                        <a class="live" href="/index_1.html">Live Chat or:</a>
+                        <span class="live_1">1800 91826389</span>
+                    </div>
+                    <div>
+                        <span class="vr vr_1 mt-2"></span>
+                    </div>
+                    <div class="text-white  d-flex flex-column ps-4">
+                        <span class="live">Hello Sign in/</span>
+                        <span class="live_1">Account <iconify-icon icon="gridicons:dropdown" style="color: white;"></iconify-icon></span>
+                    </div>
+                    <div class="text-white d-flex ps-3 align-items-center ms-3">
+                        <iconify-icon icon="bytesize:cart" style="color: white;" width="19"></iconify-icon>
+                        <span class="ps-1">Cart</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container d-flex align-items-center text-white mt-2">
+            <span class="d-flex align-items-center px-4 green_id p-2">
+                <iconify-icon icon="fe:bar" style="color: white;" width="25"></iconify-icon>
+                <span class="active ">All Categories</span>
+            </span>
+            <span class="px-4 green_id p-2">Accessories</span>
+            <span class="px-4 green_id p-2">Apparels</span>
+            <span class="px-4 green_id p-2">Marijuana Concentrates</span>
+            <span class="px-4 green_id p-2">About us</span>
+            <span class="px-4 green_id p-2">Contact us</span>
+        </div>
+    </div>
+    <div class="bg-header  pt-2 d-lg-none">
+        <div class="text-center d-flex ms-5 d-md-none">
+            <div>
+                <img src="/assets/logo.png" alt="" width="200">
+            </div>
+            <div>
+                <iconify-icon icon="streamline:interface-setting-menu-vertical-navigation-vertical-three-circle-button-menu-dots" style="color: white;" class="ms-4 mt-2" width="25"></iconify-icon>
+            </div>
+        </div>
+        <div class="text-center d-none d-md-block">
+            <div>
+                <img src="/assets/logo.png" alt="" width="200">
+            </div> 
+        </div>
+        <div class="input-group ps-4 py-3 d-md-none">
+            <input type="text" size="24" class="border-0 rounded-start ps-3 py-1" placeholder="Search by...."  >
+            <span class="input-group-text rounded-end "  style="background-color: #21b397; "id="basic-addon2">
+                <iconify-icon icon="mingcute:search-line" style="color: white;" class=""></iconify-icon>
+            </span>
+        </div>
+        <div class="input-group ps-4 py-3 d-flex justify-content-center d-none d-md-flex">
+            <input type="text" size="50" class="border-0 rounded-start ps-3 py-1" placeholder="Search by...."  >
+            <span class="input-group-text rounded-end "  style="background-color: #21b397; "id="basic-addon2">
+                <iconify-icon icon="mingcute:search-line" style="color: white;" class=""></iconify-icon>
+            </span>
+        </div>
+        <div class="d-flex container ms-md-5 ps-md-5">
+            <div class="mx-5 mx-md-5 my-1 d-md-flex">
+                <div class="d-flex ms-md-5 ps-md-5">
+                    <span class="d-flex align-items-center">
+                        <iconify-icon icon="ph:phone-light" style="color: white;" width="25"></iconify-icon>
+                    </span>
+                    <div class="d-flex flex-column text-white">
+                        <span class="live">Live Chat or :</span>
+                        <span class="live_1">1800 91826389</span>
+                    </div>
+                </div>
+                <div class="d-flex ms-4 ms-md-5 mt-3 mt-md-0">
+                    <div class="d-flex flex-column text-white">
+                        <span class="live">Hello Sign in/</span>
+                        <div class="d-flex align-items-center live_1">
+                            <span>Account</span>
+                            <iconify-icon icon="gridicons:dropdown" style="color: white;" width="20" ></iconify-icon>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex align-items-center text-white">
+                <iconify-icon icon="bytesize:cart" style="color: white;" width="25"></iconify-icon>
+                <span>Cart</span>
+                <div class="d-none d-md-block">
+                    <iconify-icon icon="streamline:interface-setting-menu-vertical-navigation-vertical-three-circle-button-menu-dots" style="color: white;" class="ms-4 mt-2" width="25"></iconify-icon>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <div class="bg_image">
+        <div class="overlay">
+              <span class="fs-2 ">Edibles</span>
+              <span class="">Home > Edibles</span>
+        </div>
+    </div>
+    <div class=" pt-3">
+        <div class="container">
+           <div class="card mt-3 mx-2 d-md-none pb-5 rounded-4">
+            <h5 class="px-3 mt-2 py-2">Filter By</h5>
+            <hr class=" my-0 ">
+            <p class="px-3 fw-semibold pt-1">Category</p>
+            <div class="px-4 d-flex justify-content-between">
+                <span>Accessories</span>
+                <div class=" center p-1">10</div>
+            </div>
+            <div class="px-4 d-flex pt-2 justify-content-between">
+                <span>Apparels</span>
+                <div class="center p-1">05</div>
+            </div>
+            <div class="px-4 d-flex pt-2 justify-content-between">
+                <span>CBD</span>
+                <div class="center p-1">10</div>
+            </div>
+            <div class="px-4 pt-2 d-flex justify-content-between">
+                <span class="fw-semibold">Edibles</span>
+                <div class="center p-1">12</div>
+            </div>
+            <div class="px-4 pt-2 d-flex justify-content-between">
+                <span>Flowers</span>
+                <div class="center p-1">05</div>
+            </div>
+            <div class="px-4 d-flex pt-2 justify-content-between">
+                <span>Marijuana Concentrates</span>
+                <div class="center p-1">05</div>
+            </div>
+            <div class="px-4 d-flex pt-2 justify-content-between">
+                <span>MarijuanaPlants</span>
+                <div class="center p-1">10</div>
+            </div>
+            <div class="px-4 d-flex pt-2 justify-content-between">
+                <span>Pre-Rolls</span>
+                <div class="center p-1">05</div>
+            </div>
+            <div class="px-4 d-flex pt-2 justify-content-between">
+                <span>Tinctures</span>
+                <div class="center p-1">05</div>
+            </div>
+            <div class="px-4 d-flex pt-2 justify-content-between">
+                <span>Vaporizers</span>
+                <div class="center p-1">05</div>
+            </div>
+            <hr>
+            <span class="px-3 fw-semibold">Price</span>
+            <div class="px-4 d-flex mt-2">
+                <input class="input" type="checkbox" value="" id="flexCheckDefault">
+                <span class="ms-2">All</span>
+            </div>
+            <div class="px-4 d-flex mt-2">
+                <input class="input" type="checkbox" value="" id="flexCheckDefault">
+                <span class="ms-2">Under $20</span>
+            </div>
+            <div class="px-4 d-flex mt-2">
+                <input class="input" type="checkbox" value="" id="flexCheckDefault">
+                <span class="ms-2">$20 - 40</span>
+            </div>
+            <div class="px-4 d-flex mt-2">
+                <input class="input" type="checkbox" value="" id="flexCheckDefault">
+                <span class="ms-2">$40 - 60</span>
+            </div>
+            <div class="px-4 d-flex mt-2">
+                <input class="input" type="checkbox" value="" id="flexCheckDefault">
+                <span class="ms-2">$60 - 80</span>
+            </div>
+            <div class="px-4 d-flex mt-2">
+                <input class="input" type="checkbox" value="" id="flexCheckDefault">
+                <span class="ms-2">$80 - above</span>
+            </div>
+            <hr>
+            <span class="px-3 fw-semibold">Available weights</span>
+            <div class="px-4 d-flex mt-2">
+                <input class="input" type="checkbox" value="" id="flexCheckDefault">
+                <span class="ms-2">All</span>
+            </div>
+            <div class="px-4 d-flex mt-2">
+                <input class="input" type="checkbox" value="" id="flexCheckDefault">
+                <span class="ms-2">50g</span>
+            </div>
+            <div class="px-4 d-flex mt-2">
+                <input class="input" type="checkbox" value="" id="flexCheckDefault">
+                <span class="ms-2">100g</span>
+            </div>
+            <div class="px-4 d-flex mt-2">
+                <input class="input" type="checkbox" value="" id="flexCheckDefault">
+                <span class="ms-2">200g</span>
+            </div>
+            <div class="px-4 d-flex mt-2">
+                <input class="input" type="checkbox" value="" id="flexCheckDefault">
+                <span class="ms-2">200g</span>
+            </div>
+            <div class="px-4 d-flex mt-2">
+                <input class="input" type="checkbox" value="" id="flexCheckDefault">
+                <span class="ms-2">500g</span>
+            </div>
+            <div class="px-4 d-flex mt-2">
+                <input class="input" type="checkbox" value="" id="flexCheckDefault">
+                <span class="ms-2">500g - above</span>
+            </div>
+            </div>
+            <div class="d-flex">
+            <div class="card card_4  mx-md-3  d-none d-md-block rounded-4">
+                <h5 class="px-3 mt-2 py-1">Filter By</h5>
+                <hr class=" my-2">
+                <span class="px-3 fw-semibold ">Category</span>
+                <div class="px-4 d-flex justify-content-between pt-2 f_s">
+                    <span>Accessories</span>
+                    <div class="center p-1">10</div>
+                </div>
+                <div class="px-4 d-flex justify-content-between pt-2 f_s">
+                    <span>Apparels</span>
+                    <div class="center p-1">05</div>
+                </div>
+                <div class="px-4 d-flex justify-content-between pt-2 f_s">
+                    <span>CBD</span>
+                    <div class="center p-1">10</div>
+                </div>
+                <div class="px-4 d-flex justify-content-between pt-2 f_s">
+                    <span class="fw-bold dollars_color">Edibles</span>
+                    <div class="center p-1">12</div>
+                </div>
+                <div class="px-4 d-flex justify-content-between pt-2 f_s">
+                    <span>Flowers</span>
+                    <div class="center p-1">05</div>
+                </div>
+                <div class="px-4 d-flex justify-content-between pt-2 f_s">
+                    <span>Marijuana Concentrates</span>
+                    <div class="center p-1">05</div>
+                </div>
+                <div class="px-4 d-flex justify-content-between pt-2 f_s">
+                    <span>MarijuanaPlants</span>
+                    <div class="center p-1">10</div>
+                </div>
+                <div class="px-4 d-flex justify-content-between pt-2 f_s">
+                    <span>Pre-Rolls</span>
+                    <div class="center p-1">05</div>
+                </div>
+                <div class="px-4 d-flex justify-content-between pt-2 f_s">
+                    <span>Tinctures</span>
+                    <div class="center p-1">05</div>
+                </div>
+                <div class="px-4 d-flex justify-content-between pt-2 f_s">
+                    <span>Vaporizers</span>
+                    <div class="center p-1">05</div>
+                </div>
+                <hr>
+                <span class="px-3 fw-semibold">Price</span>
+                <div class="px-4 d-flex mt-2 f_s">
+                    <input class="input" type="checkbox" value="" id="flexCheckDefault">
+                    <span class="ms-2">All</span>
+                </div>
+                <div class="px-4 d-flex mt-2 f_s">
+                    <input class="input" type="checkbox" value="" id="flexCheckDefault">
+                    <span class="ms-2">Under $20</span>
+                </div>
+                <div class="px-4 d-flex mt-2 f_s">
+                    <input class="input" type="checkbox" value="" id="flexCheckDefault">
+                    <span class="ms-2">$20 - 40</span>
+                </div>
+                <div class="px-4 d-flex mt-2 f_s">
+                    <input class="input" type="checkbox" value="" id="flexCheckDefault">
+                    <span class="ms-2">$40 - 60</span>
+                </div>
+                <div class="px-4 d-flex mt-2 f_s">
+                    <input class="input" type="checkbox" value="" id="flexCheckDefault">
+                    <span class="ms-2">$60 - 80</span>
+                </div>
+                <div class="px-4 d-flex mt-2 f_s">
+                    <input class="input" type="checkbox" value="" id="flexCheckDefault">
+                    <span class="ms-2">$80 - above</span>
+                </div>
+                <hr>
+                <span class="px-3 fw-semibold">Available weights</span>
+                <div class="px-4 d-flex mt-2 f_s">
+                    <input class="input" type="checkbox" value="" id="flexCheckDefault">
+                    <span class="ms-2">All</span>
+                </div>
+                <div class="px-4 d-flex mt-2 f_s">
+                    <input class="input" type="checkbox" value="" id="flexCheckDefault">
+                    <span class="ms-2">50g</span>
+                </div>
+                <div class="px-4 d-flex mt-2 f_s">
+                    <input class="input" type="checkbox" value="" id="flexCheckDefault">
+                    <span class="ms-2">100g</span>
+                </div>
+                <div class="px-4 d-flex mt-2 f_s">
+                    <input class="input" type="checkbox" value="" id="flexCheckDefault">
+                    <span class="ms-2">200g</span>
+                </div>
+                <div class="px-4 d-flex mt-2 f_s">
+                    <input class="input" type="checkbox" value="" id="flexCheckDefault">
+                    <span class="ms-2">200g</span>
+                </div>
+                <div class="px-4 d-flex mt-2 f_s">
+                    <input class="input" type="checkbox" value="" id="flexCheckDefault">
+                    <span class="ms-2">500g</span>
+                </div>
+                <div class="px-4 d-flex mt-2 f_s">
+                    <input class="input" type="checkbox" value="" id="flexCheckDefault">
+                    <span class="ms-2">500g - above</span>
+                </div>
+            </div>
+            <div class="card d-none d-lg-block card_6 rounded-4">
+                <div class="d-flex justify-content-between px-3 pt-4">
+                    <div>
+                        <span>We found <span class="edit">12</span> items for you!</span>
+                    </div>
+                    <div class="border rounded p-2 d-flex align-items-center">
+                        <span class="pt-1"><iconify-icon icon="mi:sort" style="color: gray;" class=""></iconify-icon></span>
+                        <span class="px-2">Sort by: Featured</span>
+                        <span class="pt-1"><iconify-icon icon="gridicons:dropdown"></iconify-icon></span>
+                    </div>
+                </div>
+                <div class="d-flex mt-3">
+                    <div class="card mx-3 rounded-4 card_7">
+                        <div class="d-flex justify-content-center pt-3">
+                            <img src="/assets/r2p1.png" alt="" width="150">
+                        </div>
+                        <div class="p-2 ps-3">
+                            <a class="text-dark apparels">Apparels</a>
+                            <div class="fw-semibold d-flex flex-column">
+                                <span>Apparels Men T-shirt </span>
+                                <span>(Medium size)</span>
+                            </div>
+                            <div class="mt-1">
+                                <span class="dollars_color fw-bold">$90.00</span>
+                                <del class="dollars gray">$ 120.00</del>
+                            </div>
+                        </div>
+                        <hr class="my-0">
+                        <div class="text-center py-2">
+                            <span class="dollars_color fw-bold ">Add to cart</span>
+                        </div>
+                    </div>
+                    <div class="card mx-3  rounded-4 card_7">
+                        <div class="d-flex justify-content-center pt-3">
+                            <img src="/assets/r2p2.png" alt="" width="150" height="152">
+                        </div>
+                        <div class="p-2 ps-3">
+                            <a class="text-dark apparels">Edibles</a>
+                            <div class="fw-semibold d-flex flex-column">
+                                <span>Organic Strawberry</span>
+                                <span>Lemonade Gum...</span>
+                            </div>
+                            <div class="mt-1">
+                                <span class="dollars_color fw-bold">$300.00</span>
+                                <del class="dollars gray">$ 520.00</del>
+                            </div>
+                        </div>
+                        <hr class="my-0">
+                        <div class="text-center py-2">
+                            <span class="dollars_color fw-bold ">Add to cart</span>
+                        </div>
+                    </div>
+                    <div class="card mx-3 card_7 rounded-4">
+                        <div class="d-flex justify-content-center pt-3">
+                            <img src="/assets/s-cart.png" alt="" width="150" height="152">
+                        </div>
+                        <div class="p-2 ps-3">
+                            <a class="text-dark apparels">CBD</a>
+                            <div class="fw-semibold d-flex flex-column">
+                                <span>CBD + Melatonin</span>
+                                <span class="d-xl-none">(2000mg + 180mg)...</span>
+                                <span class="d-none d-xl-block">(2000mg + 180mg) (30ml)</span>
+                            </div>
+                            <div class="mt-1">
+                                <span class="dollars_color fw-bold">$960.00</span>
+                                <del class="dollars gray">$ 1020.00</del>
+                            </div>
+                        </div>
+                        <hr class="my-0">
+                        <div class="text-center py-2">
+                            <span class="dollars_color fw-bold ">Add to cart</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex mt-3">
+                    <div class="card mx-3 rounded-4 card_7">
+                        <div class="d-flex justify-content-center pt-3">
+                            <img src="/assets/r2p1.png" alt="" width="150">
+                        </div>
+                        <div class="p-2 ps-3">
+                            <a class="text-dark apparels">Apparels</a>
+                            <div class="fw-semibold d-flex flex-column">
+                                <span>Apparels Men T-shirt </span>
+                                <span>(Medium size)</span>
+                            </div>
+                            <div class="mt-1">
+                                <span class="dollars_color fw-bold">$90.00</span>
+                                <del class="dollars gray">$ 120.00</del>
+                            </div>
+                        </div>
+                        <hr class="my-0">
+                        <div class="text-center py-2">
+                            <span class="dollars_color fw-bold ">Add to cart</span>
+                        </div>
+                    </div>
+                    <div class="card mx-3  rounded-4 card_7">
+                        <div class="d-flex justify-content-center pt-3">
+                            <img src="/assets/r2p2.png" alt="" width="150" height="152">
+                        </div>
+                        <div class="p-2 ps-3">
+                            <a class="text-dark apparels">Edibles</a>
+                            <div class="fw-semibold d-flex flex-column">
+                                <span>Organic Strawberry</span>
+                                <span>Lemonade Gum...</span>
+                            </div>
+                            <div class="mt-1">
+                                <span class="dollars_color fw-bold">$300.00</span>
+                                <del class="dollars gray">$ 520.00</del>
+                            </div>
+                        </div>
+                        <hr class="my-0">
+                        <div class="text-center py-2">
+                            <span class="dollars_color fw-bold ">Add to cart</span>
+                        </div>
+                    </div>
+                    <div class="card mx-3 card_7 rounded-4">
+                        <div class="d-flex justify-content-center pt-3">
+                            <img src="/assets/s-cart.png" alt="" width="150" height="152">
+                        </div>
+                        <div class="p-2 ps-3">
+                            <a class="text-dark apparels">CBD</a>
+                            <div class="fw-semibold d-flex flex-column">
+                                <span>CBD + Melatonin</span>
+                                <span class="d-xl-none">(2000mg + 180mg)...</span>
+                                <span class="d-none d-xl-block">(2000mg + 180mg) (30ml)</span>
+                            </div>
+                            <div class="mt-1">
+                                <span class="dollars_color fw-bold">$960.00</span>
+                                <del class="dollars gray">$ 1020.00</del>
+                            </div>
+                        </div>
+                        <hr class="my-0">
+                        <div class="text-center py-2">
+                            <span class="dollars_color fw-bold ">Add to cart</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex my-3">
+                    <div class="card mx-3 rounded-4 card_7">
+                        <div class="d-flex justify-content-center pt-3">
+                            <img src="/assets/r2p1.png" alt="" width="150">
+                        </div>
+                        <div class="p-2 ps-3">
+                            <a class="text-dark apparels">Apparels</a>
+                            <div class="fw-semibold d-flex flex-column">
+                                <span>Apparels Men T-shirt </span>
+                                <span>(Medium size)</span>
+                            </div>
+                            <div class="mt-1">
+                                <span class="dollars_color fw-bold">$90.00</span>
+                                <del class="dollars gray">$ 120.00</del>
+                            </div>
+                        </div>
+                        <hr class="my-0">
+                        <div class="text-center py-2">
+                            <span class="dollars_color fw-bold ">Add to cart</span>
+                        </div>
+                    </div>
+                    <div class="card mx-3  rounded-4 card_7">
+                        <div class="d-flex justify-content-center pt-3">
+                            <img src="/assets/r2p2.png" alt="" width="150" height="152">
+                        </div>
+                        <div class="p-2 ps-3">
+                            <a class="text-dark apparels">Edibles</a>
+                            <div class="fw-semibold d-flex flex-column">
+                                <span>Organic Strawberry</span>
+                                <span>Lemonade Gum...</span>
+                            </div>
+                            <div class="mt-1">
+                                <span class="dollars_color fw-bold">$300.00</span>
+                                <del class="dollars gray">$ 520.00</del>
+                            </div>
+                        </div>
+                        <hr class="my-0">
+                        <div class="text-center py-2">
+                            <span class="dollars_color fw-bold ">Add to cart</span>
+                        </div>
+                    </div>
+                    <div class="card mx-3 card_7 rounded-4">
+                        <div class="d-flex justify-content-center pt-3">
+                            <img src="/assets/s-cart.png" alt="" width="150" height="152">
+                        </div>
+                        <div class="p-2 ps-3">
+                            <a class="text-dark apparels">CBD</a>
+                            <div class="fw-semibold d-flex flex-column">
+                                <span>CBD + Melatonin</span>
+                                <span class="d-xl-none">(2000mg + 180mg)...</span>
+                                <span class="d-none d-xl-block">(2000mg + 180mg) (30ml)</span>
+                            </div>
+                            <div class="mt-1">
+                                <span class="dollars_color fw-bold">$960.00</span>
+                                <del class="dollars gray">$ 1020.00</del>
+                            </div>
+                        </div>
+                        <hr class="my-0">
+                        <div class="text-center py-2">
+                            <span class="dollars_color fw-bold ">Add to cart</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card d-none d-md-block d-lg-none rounded-4">
+                <div class="d-flex justify-content-between pt-3">
+                    <span class="ps-3 pt-2">We found <span class="edit">12</span> items for you!</span>
+                    <div  class="d-flex mt-2 me-3 align-items-center border rounded-3 px-1">
+                        <span class="pt-1"><iconify-icon icon="icon-park-outline:sort-two"></iconify-icon></span>
+                        <span class="px-2">Sort by: Featured</span>
+                        <span class="pt-1"><iconify-icon icon="gridicons:dropdown"></iconify-icon></span>
+                    </div>
+                </div>
+                <div class="d-flex">
+                    <div class="card m-3 card_5 rounded-4">
+                        <div class="d-flex justify-content-center pt-3">
+                            <img src="/assets/r2p1.png" alt="" width="150">
+                        </div>
+                        <div class="px-3 pt-2">
+                            <a class="text-dark apparels">Apparels</a>
+                            <div class="fw-semibold d-flex flex-column">
+                                <span>Apparels Men T-...</span>
+                                <span>(Medium size)</span>
+                            </div>
+                            <div class="mt-1">
+                                <span class="dollars_color fw-bold">$90.00</span>
+                                <del class="dollars gray">$ 120.00</del>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="card m-3 card_5 rounded-4">
+                        <div class="d-flex justify-content-center pt-3">
+                            <img src="/assets/r2p2.png" alt="" width="150">
+                        </div>
+                        <div class="px-3">
+                            <a class="text-dark apparels">Edibles</a>
+                            <div class="fw-semibold d-flex flex-column">
+                                <span>Organic Strawberry</span>
+                                <span>Lemonade Gum...</span>
+                            </div>
+                            <div class="mt-1">
+                                <span class="dollars_color fw-bold">$300.00</span>
+                                <del class="dollars gray">$ 520.00</del>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+                <div class="d-flex">
+                    <div class="card m-3 card_5 rounded-4">
+                        <div class="d-flex justify-content-center pt-3">
+                            <img src="/assets/s-cart.png" alt="" width="150">
+                        </div>
+                        <div class="px-3">
+                            <a class="text-dark apparels">CBD</a>
+                            <div class="fw-semibold d-flex flex-column">
+                                <span>CBD + Melatonin </span>
+                                <span>(2000mg + 180mg)</span>
+                            </div>
+                            <div class="mt-1">
+                                <span class="dollars_color fw-bold">$90.00</span>
+                                <del class="dollars gray">$ 120.00</del>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card m-3 card_5 rounded-4">
+                        <div class="d-flex justify-content-center pt-3">
+                            <img src="/assets/r2p1.png" alt="" width="150">
+                        </div>
+                        <div class="px-3 pt-3">
+                            <a class="text-dark apparels">Apparels</a>
+                            <div class="fw-semibold d-flex flex-column">
+                                <span>Apparels Men T-... </span>
+                                <span>(Medium size)</span>
+                            </div>
+                            <div class="mt-1">
+                                <span class="dollars_color fw-bold">$90.00</span>
+                                <del class="dollars gray">$ 120.00</del>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex">
+                    <div class="card m-3 card_5 rounded-4">
+                        <div class="d-flex justify-content-center pt-3">
+                            <img src="/assets/r2p2.png" alt="" width="150">
+                        </div>
+                        <div class="px-3">
+                            <a class="text-dark apparels">Edibles</a>
+                            <div class="fw-semibold d-flex flex-column">
+                                <span>Organic Strawberry</span>
+                                <span>Lemonade Gum...</span>
+                            </div>
+                            <div class="mt-1">
+                                <span class="dollars_color fw-bold">$300.00</span>
+                                <del class="dollars gray">$ 520.00</del>
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="card m-3 card_5 rounded-4">
+                        <div class="d-flex justify-content-center pt-3">
+                            <img src="/assets/s-cart.png" alt="" width="150">
+                        </div>
+                        <div class="px-3">
+                            <a class="text-dark apparels">CBD</a>
+                            <div class="fw-semibold d-flex flex-column">
+                                <span>CBD + Melatonin </span>
+                                <span>(2000mg + 180mg)</span>
+                            </div>
+                            <div class="mt-1">
+                                <span class="dollars_color fw-bold">$90.00</span>
+                                <del class="dollars gray">$ 120.00</del>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="card ms-3 mt-3 d-none d-md-block d-lg-none rounded-4">
+                <div class="d-flex">
+                    <div class="card m-3 card_5 rounded-4">
+                        <div class="d-flex justify-content-center pt-3">
+                            <img src="/assets/r2p1.png" alt="" width="150">
+                        </div>
+                        <div class="px-3">
+                            <a class="text-dark apparels">Apparels</a>
+                            <div class="fw-semibold d-flex flex-column">
+                                <span>Apparels Men T-shirt </span>
+                                <span>(Medium size)</span>
+                            </div>
+                            <div class="mt-1">
+                                <span class="dollars_color fw-bold">$90.00</span>
+                                <del class="dollars gray">$ 120.00</del>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card m-3 card_5 rounded-4">
+                        <div class="d-flex justify-content-center pt-3">
+                            <img src="/assets/r2p2.png" alt="" width="150">
+                        </div>
+                        <div class="px-3">
+                            <a class="text-dark apparels">Edibles</a>
+                            <div class="fw-semibold d-flex flex-column">
+                                <span>Organic Strawberry</span>
+                                <span>Lemonade Gum...</span>
+                            </div>
+                            <div class="mt-1">
+                                <span class="dollars_color fw-bold">$300.00</span>
+                                <del class="dollars gray">$ 520.00</del>
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="card m-3 card_5 rounded-4">
+                        <div class="d-flex justify-content-center pt-3">
+                            <img src="/assets/s-cart.png" alt="" width="150">
+                        </div>
+                        <div class="px-3">
+                            <a class="text-dark apparels">CBD</a>
+                            <div class="fw-semibold d-flex flex-column">
+                                <span>CBD + Melatonin </span>
+                                <span>(2000mg + 180mg)...</span>
+                            </div>
+                            <div class="mt-1">
+                                <span class="dollars_color fw-bold">$90.00</span>
+                                <del class="dollars gray">$ 120.00</del>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card my-3 pb-3 mx-2 d-md-none rounded-4">
+                <div class="p-3 d-flex justify-content-between">
+                    <div>
+                        <small>We found <span class="will">12</span> items for you!</small>
+                    </div>
+                    <div class="border rounded p-1 ps-2 pt-2 d-flex">
+                        <iconify-icon icon="grommet-icons:filter" style="color: gainsboro;"></iconify-icon>
+                        <iconify-icon icon="gridicons:dropdown" width="20"></iconify-icon>
+                    </div>
+                </div>
+                <div class="card mx-3 rounded-4">
+                    <div class="d-flex justify-content-center pt-3">
+                        <img src="/assets/r2p1.png" alt="" width="150">
+                    </div>
+                    <div class="p-2">
+                        <a class="text-dark apparels">Apparels</a>
+                        <div class="fw-semibold d-flex flex-column">
+                            <span>Apparels Men T-shirt </span>
+                            <span>(Medium size)</span>
+                        </div>
+                        <div class="mt-1">
+                            <span class="dollars_color fw-bold">$90.00</span>
+                            <del class="dollars gray">$ 120.00</del>
+                        </div>
+                    </div>
+                    <hr class="my-0">
+                    <div class="text-center py-2">
+                        <span class="dollars_color fw-bold ">Add to cart</span>
+                    </div>
+                </div>
+                <div class="card mx-3 mt-3 rounded-4">
+                    <div class="d-flex justify-content-center pt-3">
+                        <img src="/assets/r2p2.png" alt="" width="150">
+                    </div>
+                    <div class="p-2">
+                        <a class="text-dark apparels">Edibles</a>
+                        <div class="fw-semibold d-flex flex-column">
+                            <span>Organic Strawberry</span>
+                            <span>Lemonade Gum...</span>
+                        </div>
+                        <div class="mt-1">
+                            <span class="dollars_color fw-bold">$300.00</span>
+                            <del class="dollars gray">$ 520.00</del>
+                        </div>
+                    </div>
+                    <hr class="my-0">
+                    <div class="text-center py-2">
+                        <span class="dollars_color fw-bold ">Add to cart</span>
+                    </div>
+                </div>
+                <div class="card mx-3 mt-3 rounded-4">
+                    <div class="d-flex justify-content-center pt-3">
+                        <img src="/assets/s-cart.png" alt="" width="150">
+                    </div>
+                    <div class="p-2">
+                        <a class="text-dark apparels">CBD</a>
+                        <div class="fw-semibold d-flex flex-column">
+                            <span>CBD + Melatonin</span>
+                            <span>(2000mg + 180mg) (30ml)</span>
+                        </div>
+                        <div class="mt-1">
+                            <span class="dollars_color fw-bold">$960.00</span>
+                            <del class="dollars gray">$ 1020.00</del>
+                        </div>
+                    </div>
+                    <hr class="my-0">
+                    <div class="text-center py-2">
+                        <span class="dollars_color fw-bold ">Add to cart</span>
+                    </div>
+                </div>
+                <div class="card mx-3 mt-3 rounded-4">
+                    <div class="d-flex justify-content-center pt-3">
+                        <img src="/assets/r2p1.png" alt="" width="150">
+                    </div>
+                    <div class="p-2">
+                        <a class="text-dark apparels">Apparels</a>
+                        <div class="fw-semibold d-flex flex-column">
+                            <span>Apparels Men T-shirt </span>
+                            <span>(Medium size)</span>
+                        </div>
+                        <div class="mt-1">
+                            <span class="dollars_color fw-bold">$90.00</span>
+                            <del class="dollars gray">$ 120.00</del>
+                        </div>
+                    </div>
+                    <hr class="my-0">
+                    <div class="text-center py-2">
+                        <span class="dollars_color fw-bold ">Add to cart</span>
+                    </div>
+                </div>
+                <div class="card mx-3 mt-3 rounded-4">
+                    <div class="d-flex justify-content-center pt-3">
+                        <img src="/assets/r2p2.png" alt="" width="150">
+                    </div>
+                    <div class="p-2">
+                        <a class="text-dark apparels">Edibles</a>
+                        <div class="fw-semibold d-flex flex-column">
+                            <span>Organic Strawberry</span>
+                            <span>Lemonade Gum...</span>
+                        </div>
+                        <div class="mt-1">
+                            <span class="dollars_color fw-bold">$300.00</span>
+                            <del class="dollars gray">$ 520.00</del>
+                        </div>
+                    </div>
+                    <hr class="my-0">
+                    <div class="text-center py-2">
+                        <span class="dollars_color fw-bold ">Add to cart</span>
+                    </div>
+                </div>
+                <div class="card mx-3 mt-3 rounded-4">
+                    <div class="d-flex justify-content-center pt-3">
+                        <img src="/assets/s-cart.png" alt="" width="150">
+                    </div>
+                    <div class="p-2">
+                        <a class="text-dark apparels">CBD</a>
+                        <div class="fw-semibold d-flex flex-column">
+                            <span>CBD + Melatonin</span>
+                            <span>(2000mg + 180mg) (30ml)</span>
+                        </div>
+                        <div class="mt-1">
+                            <span class="dollars_color fw-bold">$960.00</span>
+                            <del class="dollars gray">$ 1020.00</del>
+                        </div>
+                    </div>
+                    <hr class="my-0">
+                    <div class="text-center py-2">
+                        <span class="dollars_color fw-bold ">Add to cart</span>
+                    </div>
+                </div>
+                <div class="card mx-3 mt-3 rounded-4">
+                    <div class="d-flex justify-content-center pt-3">
+                        <img src="/assets/r2p1.png" alt="" width="150">
+                    </div>
+                    <div class="p-2">
+                        <a class="text-dark apparels">Apparels</a>
+                        <div class="fw-semibold d-flex flex-column">
+                            <span>Apparels Men T-shirt </span>
+                            <span>(Medium size)</span>
+                        </div>
+                        <div class="mt-1">
+                            <span class="dollars_color fw-bold">$90.00</span>
+                            <del class="dollars gray">$ 120.00</del>
+                        </div>
+                    </div>
+                    <hr class="my-0">
+                    <div class="text-center py-2">
+                        <span class="dollars_color fw-bold ">Add to cart</span>
+                    </div>
+                </div>
+                <div class="card mx-3 mt-3 rounded-4">
+                    <div class="d-flex justify-content-center pt-3">
+                        <img src="/assets/r2p2.png" alt="" width="150">
+                    </div>
+                    <div class="p-2">
+                        <a class="text-dark apparels">Edibles</a>
+                        <div class="fw-semibold d-flex flex-column">
+                            <span>Organic Strawberry</span>
+                            <span>Lemonade Gum...</span>
+                        </div>
+                        <div class="mt-1">
+                            <span class="dollars_color fw-bold">$300.00</span>
+                            <del class="dollars gray">$ 520.00</del>
+                        </div>
+                    </div>
+                    <hr class="my-0">
+                    <div class="text-center py-2">
+                        <span class="dollars_color fw-bold ">Add to cart</span>
+                    </div>
+                </div>
+                <div class="card mx-3 mt-3 rounded-4">
+                    <div class="d-flex justify-content-center pt-3">
+                        <img src="/assets/s-cart.png" alt="" width="150">
+                    </div>
+                    <div class="p-2">
+                        <a class="text-dark apparels">CBD</a>
+                        <div class="fw-semibold d-flex flex-column">
+                            <span>CBD + Melatonin</span>
+                            <span>(2000mg + 180mg) (30ml)</span>
+                        </div>
+                        <div class="mt-1">
+                            <span class="dollars_color fw-bold">$960.00</span>
+                            <del class="dollars gray">$ 1020.00</del>
+                        </div>
+                    </div>
+                    <hr class="my-0">
+                    <div class="text-center py-2">
+                        <span class="dollars_color fw-bold ">Add to cart</span>
+                    </div>
+                </div>
+            </div>
+            <div class="card mx-2 px-2 rounded-4 ms-md-3 me-md-0  py-3  mt-md-3 card_13">
+                <div class="d-flex ms-3">
+                    <span class="fw-semibold fs-5">Explore more products</span>
+                </div>
+                <div id="carouselExampleControls" class="carousel slide d-md-none" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <div class="card mx-3 rounded-4 mt-2 mb-2">
+                            <div class="d-flex justify-content-center pt-3">
+                                <img src="/assets/r2p2.png" alt="" width="150">
+                            </div>
+                            <div class="p-2">
+                                <a class="text-dark apparels">Apparels</a>
+                                <div class="fw-semibold d-flex flex-column">
+                                    <span>Organic Strawberry </span>
+                                    <span>Lemonade Gum...</span>
+                                </div>
+                                <div class="mt-1">
+                                    <span class="dollars_color fw-bold">$90.00</span>
+                                    <del class="dollars gray">$ 120.00</del>
+                                </div>
+                            </div>
+                            <hr class="my-0">
+                            <div class="text-center py-2">
+                                <span class="dollars_color fw-bold ">Add to cart</span>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <div class="card mx-3 rounded-4 mt-2 mb-2 ">
+                            <div class="d-flex justify-content-center pt-3">
+                                <img src="/assets/r2p3.png" alt="" width="150" height="160">
+                            </div>
+                            <div class="p-2">
+                                <a class="text-dark apparels">Apparels</a>
+                                <div class="fw-semibold d-flex flex-column">
+                                    <span>Organic Strawberry </span>
+                                    <span>Lemonade Hemp Gum...</span>
+                                </div>
+                                <div class="mt-1">
+                                    <span class="dollars_color fw-bold">$300.00</span>
+                                    <del class="dollars gray">$ 520.00</del>
+                                </div>
+                            </div>
+                            <hr class="my-0">
+                            <div class="text-center py-2">
+                                <span class="dollars_color fw-bold ">Add to cart</span>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <div class="card mx-3 rounded-4 mt-2 mb-2">
+                            <div class="d-flex justify-content-center pt-3">
+                                <img src="/assets/s-cart.png" alt="" width="150" height="160">
+                            </div>
+                            <div class="p-2">
+                                <a class="text-dark apparels">CBD</a>
+                                <div class="fw-semibold d-flex flex-column">
+                                    <span>CBD + Melatonin (2000mg + 180mg) (30ml)</span>
+                                </div>
+                                <div class="mt-1">
+                                    <span class="dollars_color fw-bold">$960.00</span>
+                                    <del class="dollars gray">$ 1020.00</del>
+                                </div>
+                            </div>
+                            <hr class="my-0">
+                            <div class="text-center py-2">
+                                <span class="dollars_color fw-bold ">Add to cart</span>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <div class="card mx-3 rounded-4 mt-2 mb-2">
+                            <div class="d-flex justify-content-center pt-3">
+                                <img src="/assets/r3p4.png" alt="" width="150" height="160">
+                            </div>
+                            <div class="p-2">
+                                <a class="text-dark apparels">Edibles</a>
+                                <div class="fw-semibold d-flex flex-column">
+                                    <span>Bird Hemp Hearts(500g) +  </span>
+                                    <span>Protein..</span>
+                                </div>
+                                <div class="mt-1">
+                                    <span class="dollars_color fw-bold">$450.00</span>
+                                    <del class="dollars gray">$ 620.00</del>
+                                </div>
+                            </div>
+                            <hr class="my-0">
+                            <div class="text-center py-2">
+                                <span class="dollars_color fw-bold ">Add to cart</span>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <button class="carousel-control-prev opacity-100" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                        <div class="card rounded-5 " style="background-color: #24807a;">
+                            <iconify-icon icon="ep:arrow-up" width="15" height="15" rotate="90deg" class="rounded-5 p-2" flip="horizontal,vertical"></iconify-icon>
+                        </div>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next opacity-100" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                        <div class="card rounded-5 " style="background-color: #24807a;">
+                            <iconify-icon icon="ep:arrow-up" width="15" height="15" rotate="90deg" class="rounded-5 p-2"></iconify-icon>
+                        </div>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+                <div id="carouselExample" class="carousel slide d-none d-md-block d-lg-none " data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <div class="d-flex">
+                            <div class="card mx-3 rounded-4 mt-2 card_8 mb-2">
+                                <div class="d-flex justify-content-center pt-3">
+                                    <img src="/assets/r2p2.png" alt="" width="150" height="150">
+                                </div>
+                                <div class="p-2">
+                                    <a class="text-dark apparels">Apparels</a>
+                                    <div class="fw-semibold d-flex flex-column">
+                                        <span>Organic Strawberry </span>
+                                        <span>Lemonade Gum...</span>
+                                    </div>
+                                    <div class="mt-1">
+                                        <span class="dollars_color fw-bold">$90.00</span>
+                                        <del class="dollars gray">$ 120.00</del>
+                                    </div>
+                                </div>
+                                <hr class="my-0">
+                                <div class="text-center py-2">
+                                    <span class="dollars_color fw-bold ">Add to cart</span>
+                                </div>
+                            </div>
+                            <div class="card mx-3 rounded-4 mt-2 card_8">
+                                <div class="d-flex justify-content-center pt-3">
+                                    <img src="/assets/r2p3.png" alt="" width="150" height="150">
+                                </div>
+                                <div class="p-2">
+                                    <a class="text-dark apparels">Apparels</a>
+                                    <div class="fw-semibold d-flex flex-column">
+                                        <span>Organic Strawberry </span>
+                                        <span>Lemonade Hemp...</span>
+                                    </div>
+                                    <div class="mt-1">
+                                        <span class="dollars_color fw-bold">$300.00</span>
+                                        <del class="dollars gray">$ 520.00</del>
+                                    </div>
+                                </div>
+                                <hr class="my-0">
+                                <div class="text-center py-2">
+                                    <span class="dollars_color fw-bold ">Add to cart</span>
+                                </div>
+                            </div>
+                            <div class="card mx-3 rounded-4 mt-2 card_8">
+                                <div class="d-flex justify-content-center pt-3">
+                                    <img src="/assets/s-cart.png" alt="" width="150" height="150">
+                                </div>
+                                <div class="p-2">
+                                    <a class="text-dark apparels">CBD</a>
+                                    <div class="fw-semibold d-flex flex-column">
+                                        <span>CBD + Melatonin (2000mg + 180mg)...</span>
+                                    </div>
+                                    <div class="mt-1">
+                                        <span class="dollars_color fw-bold">$960.00</span>
+                                        <del class="dollars gray">$ 1020.00</del>
+                                    </div>
+                                </div>
+                                <hr class="my-0">
+                                <div class="text-center py-2">
+                                    <span class="dollars_color fw-bold ">Add to cart</span>
+                                </div>
+                            </div> 
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <div class="d-flex">
+                            <div class="card mx-3 rounded-4 mt-2 card_8 mb-2">
+                                <div class="d-flex justify-content-center pt-3">
+                                    <img src="/assets/r2p3.png" alt="" width="150" height="150">
+                                </div>
+                                <div class="p-2">
+                                    <a class="text-dark apparels">Apparels</a>
+                                    <div class="fw-semibold d-flex flex-column">
+                                        <span>Organic Strawberry </span>
+                                        <span>Lemonade Hemp ...</span>
+                                    </div>
+                                    <div class="mt-1">
+                                        <span class="dollars_color fw-bold">$300.00</span>
+                                        <del class="dollars gray">$ 520.00</del>
+                                    </div>
+                                </div>
+                                <hr class="my-0">
+                                <div class="text-center py-2">
+                                    <span class="dollars_color fw-bold ">Add to cart</span>
+                                </div>
+                            </div>
+                            <div class="card mx-3 rounded-4 mt-2 card_8">
+                                <div class="d-flex justify-content-center pt-3">
+                                    <img src="/assets/r2p2.png" alt="" width="150" height="150">
+                                </div>
+                                <div class="p-2">
+                                    <a class="text-dark apparels">Apparels</a>
+                                    <div class="fw-semibold d-flex flex-column">
+                                        <span>Organic Strawberry </span>
+                                        <span>Lemonade Gum...</span>
+                                    </div>
+                                    <div class="mt-1">
+                                        <span class="dollars_color fw-bold">$90.00</span>
+                                        <del class="dollars gray">$ 120.00</del>
+                                    </div>
+                                </div>
+                                <hr class="my-0">
+                                <div class="text-center py-2">
+                                    <span class="dollars_color fw-bold ">Add to cart</span>
+                                </div>
+                            </div>
+                            <div class="card mx-3 rounded-4 mt-2 card_8">
+                                <div class="d-flex justify-content-center pt-3">
+                                    <img src="/assets/r2p3.png" alt="" width="150" height="150">
+                                </div>
+                                <div class="p-2">
+                                    <a class="text-dark apparels">Apparels</a>
+                                    <div class="fw-semibold d-flex flex-column">
+                                        <span>Organic Strawberry </span>
+                                        <span>Lemonade Hemp...</span>
+                                    </div>
+                                    <div class="mt-1">
+                                        <span class="dollars_color fw-bold">$300.00</span>
+                                        <del class="dollars gray">$ 520.00</del>
+                                    </div>
+                                </div>
+                                <hr class="my-0">
+                                <div class="text-center py-2">
+                                    <span class="dollars_color fw-bold ">Add to cart</span>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev opacity-100 " type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                        <div class="card rounded-5 move" style="background-color: #24807a;">
+                            <iconify-icon icon="ep:arrow-up" width="15" height="15" rotate="90deg" class="rounded-5 p-2" flip="horizontal,vertical"></iconify-icon>
+                        </div>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next opacity-100" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                        <div class="card rounded-5 move_1" style="background-color: #24807a;">
+                            <iconify-icon icon="ep:arrow-up" width="15" height="15" rotate="90deg" class="rounded-5 p-2"></iconify-icon>
+                        </div>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+                <div class="d-lg-flex d-none">
+                    <div class="card mx-3 rounded-4 mt-2 card_9">
+                        <div class="d-flex justify-content-center pt-3">
+                            <img src="/assets/r2p2.png" alt="" width="150" height="150">
+                        </div>
+                        <div class="p-2">
+                            <a class="text-dark apparels">Apparels</a>
+                            <div class="fw-semibold d-flex flex-column">
+                                <span>Organic Strawberry </span>
+                                <span>Lemonade Gum...</span>
+                            </div>
+                            <div class="mt-1">
+                                <span class="dollars_color fw-bold">$90.00</span>
+                                <del class="dollars gray">$ 120.00</del>
+                            </div>
+                        </div>
+                        <hr class="my-0">
+                        <div class="text-center py-2">
+                            <span class="dollars_color fw-bold ">Add to cart</span>
+                        </div>
+                    </div>
+                    <div class="card mx-3 rounded-4 mt-2 card_9">
+                        <div class="d-flex justify-content-center pt-3">
+                            <img src="/assets/r2p3.png" alt="" width="150" height="150">
+                        </div>
+                        <div class="p-2">
+                            <a class="text-dark apparels">Apparels</a>
+                            <div class="fw-semibold d-flex flex-column">
+                                <span>Organic Strawberry </span>
+                                <span>Lemonade Hemp Gum...</span>
+                            </div>
+                            <div class="mt-1">
+                                <span class="dollars_color fw-bold">$300.00</span>
+                                <del class="dollars gray">$ 520.00</del>
+                            </div>
+                        </div>
+                        <hr class="my-0">
+                        <div class="text-center py-2">
+                            <span class="dollars_color fw-bold ">Add to cart</span>
+                        </div>
+                    </div>
+                    <div class="card mx-3 rounded-4 mt-2 card_9">
+                        <div class="d-flex justify-content-center pt-3">
+                            <img src="/assets/s-cart.png" alt="" width="150" height="150">
+                        </div>
+                        <div class="p-2">
+                            <a class="text-dark apparels">CBD</a>
+                            <div class="fw-semibold d-flex flex-column">
+                                <span>CBD + Melatonin (2000mg + 180mg)...</span>
+                            </div>
+                            <div class="mt-1">
+                                <span class="dollars_color fw-bold">$960.00</span>
+                                <del class="dollars gray">$ 1020.00</del>
+                            </div>
+                        </div>
+                        <hr class="my-0">
+                        <div class="text-center py-2">
+                            <span class="dollars_color fw-bold ">Add to cart</span>
+                        </div>
+                    </div>
+                    <div class="card mx-3 rounded-4 mt-2 card_9">
+                        <div class="d-flex justify-content-center pt-3">
+                            <img src="/assets/r3p4.png" alt="" width="150" height="150">
+                        </div>
+                        <div class="p-2">
+                            <a class="text-dark apparels">Edibles</a>
+                            <div class="fw-semibold d-flex flex-column">
+                                <span>Bird Hemp Hearts...  </span>
+                                <span>Protein..</span>
+                            </div>
+                            <div class="mt-1">
+                                <span class="dollars_color fw-bold">$450.00</span>
+                                <del class="dollars gray">$ 620.00</del>
+                            </div>
+                        </div>
+                        <hr class="my-0">
+                        <div class="text-center py-2">
+                            <span class="dollars_color fw-bold ">Add to cart</span>
+                        </div>
+                        <span class="">
+                            <iconify-icon icon="ep:arrow-up" style="background-color: #11676a; color:white;" width="20" height="20" rotate="90deg" class=" p-2 rounded-5 move_2" ></iconify-icon>
+                        </span>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="mt-3 d-none d-lg-flex container ">
+                <div class="d-flex">
+                    <div class="card card_2 rounded-4 ps-2 ps-xl-4 pt-2">
+                        <div class="ms-2 fw-semibold">Book By Phone</div>
+                            <div class="d-flex mt-2 mb-3">
+                              <iconify-icon icon="gridicons:phone" style="color: #11676a;" width="45"></iconify-icon>
+                              <div class="d-flex flex-column">
+                                  <span class="fw-semibold">+1 123-456-7890</span>
+                                  <span class="home gray">Booking time: 08:00AM - 10:00 PM</span>
+                              </div>
+                            </div>
+                    </div>
+                    <div class="card card_2 ms-3 rounded-4 ps-3 ps-xl-4 pt-2">
+                        <div class="ms-2 fw-semibold">Give your Feedback</div>
+                          <div class="d-flex mt-2 mb-3 ms-xl-2">
+                            <iconify-icon icon="gridicons:mail" style="color: #11676a;" width="35"></iconify-icon>
+                            <div class="d-flex flex-column ps-2">
+                                <span class="fw-semibold">feedback@canabid.com</span>
+                                <span class="home gray">Help us improve!</span>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="card card_2 ms-3 rounded-4 ps-3 ps-xl-4 pt-2">
+                        <div class="ms-2 fw-semibold">Service and Support</div>
+                          <div class="d-flex mt-2 mb-3 ms-xl-2">
+                            <iconify-icon icon="ri:customer-service-2-line" style="color: #11676a;" width="35"></iconify-icon>
+                            <div class="d-flex flex-column ps-2">
+                                <span class="fw-semibold">Support Centre</span>
+                                <span class="home gray">Get your doubts cleared</span>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex flex-column flex-md-row mx-0 px-0 d-lg-none">
+                <div class="card col-md mt-md-3 ps-2 col mx-1 mt-3 rounded-4 pt-3 mt-lg-0 ">
+                    <div class="ms-2 fw-semibold">Book By Phone</div>
+                    <div class="d-flex mt-2 mb-3">
+                      <iconify-icon icon="gridicons:phone" style="color: #11676a;" width="50"></iconify-icon>
+                      <div class="d-flex flex-column">
+                          <span class="fw-semibold feed">+1 123-456-7890</span>
+                          <span class="home gray book">Booking time: 08:00 AM - 10:00 PM</span>
+                      </div>
+                    </div>
+                </div>
+                <div class="card col-md mt-md-3 ps-2 col mx-1 mt-3 rounded-4 pt-3 mt-lg-0 ">
+                  <div class="ms-2 fw-semibold">Give your Feedback</div>
+                  <div class="d-flex mt-2 mb-3 ms-2">
+                    <iconify-icon icon="gridicons:mail" style="color: #11676a;" width="35"></iconify-icon>
+                    <div class="d-flex flex-column ms-2">
+                        <span class="fw-semibold feed">feedback@canabid.com</span>
+                        <span class="home gray">Help us inprove!</span>
+                    </div>
+                  </div>
+               </div>
+               <div class="card col-md mt-md-3 ps-2 col mx-1 mt-3 rounded-4 pt-3 mt-lg-0">
+                  <div class="ms-2 fw-semibold">Service and Support</div>
+                  <div class="d-flex mt-2 mb-3 ms-2">
+                    <iconify-icon icon="ri:customer-service-2-line" style="color: #11676a;" width="35"></iconify-icon>
+                    <div class="d-flex flex-column ms-2">
+                        <span class="fw-semibold feed">Support Center</span>
+                        <span class="home gray">Get your doubts cleared</span>
+                    </div>
+                  </div>
+               </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer mt-3 d-md-none">
+        <div class="text-center pt-4">
+            <img src="/assets/logo.png" alt="" width="225">
+        </div>
+        <div class="d-flex text-white container flex-column mt-4">
+            <span class="d-flex align-items-center lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur
+            </span>
+            <div class="d-flex flex-column mt-4 lorem">
+                <h5>Quick Links</h5>
+                <span class="mt-2">Seller registration</span>
+                <span class="mt-2">Terms and conditions</span>
+                <span class="mt-2">About us</span>
+                <span class="mt-2">Contact us</span>
+            </div>
+            <div class="d-flex flex-column mt-4">
+                <h5>Find us</h5>
+                <div class="d-flex align-items-center mt-1">
+                    <iconify-icon icon="foundation:mail" style="color: white;" width="20"></iconify-icon>
+                    <span class="ps-2 lorem">support@canabid.com</span>
+                </div>
+                <div class="d-flex align-items-center mt-1">
+                    <iconify-icon icon="ic:round-phone" style="color: white;" class="mt-2 " width="20"></iconify-icon>
+                    <span class="ps-2 mt-2 lorem">+1 123-456-7890</span>
+                </div>
+                <div class="mt-4">
+                    <h5>Connect with us</h5>
+                    <div class="d-flex pt-2">
+                        <iconify-icon icon="basil:facebook-solid" style="color: white;" width="25"></iconify-icon>
+                        <iconify-icon icon="fe:google-plus" style="color: white;" width="30" height="30" class="ms-3"></iconify-icon>
+                        <iconify-icon icon="jam:linkedin" style="color: white;" width="25" class="ms-3"></iconify-icon>
+                        <iconify-icon icon="ant-design:twitter-outlined" style="color: white;" width="28" class="ms-3 "></iconify-icon>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="text-center lorem d-flex flex-column lorem">
+                <span>&copy;2022 canabid.com, all right reserved</span>
+                <a href="" class="text-white my-1 mb-4">Privacy policy</a>
+            </div>
+        </div>
+    </div>
+    <div class="footer mt-3 text-white  d-none d-md-block ">
+        <div class="container pt-4">
+            <img src="/assets/logo.png" alt="" width="200">
+            <div class="d-flex lorem justify-content-between">
+                <div class="col-lg-4 col-5 mt-3">
+                    <span class="lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                        do eiusmod tempor incididunt ut labore et dolore magna
+                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                        ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse
+                        cillum dolore eu fugiat nulla pariatur
+                    </span>
+                </div>
+                <div class="col-lg-2 d-flex flex-column mt-1">
+                        <span class="quick fw-semibold">Quick Links</span>
+                        <span class="mt-2">Seller registration</span>
+                        <span class="mt-2">Terms and conditions</span>
+                        <span class="mt-2">About us</span>
+                        <span class="mt-2">Contact us</span>
+                </div>
+                <div class="d-flex col-lg-3  flex-column mt-1">
+                    <span class="quick fw-semibold">Find us</span>
+                    <div class="d-flex align-items-center lorem mt-2">
+                        <iconify-icon icon="foundation:mail" style="color: white;" width="20"></iconify-icon>
+                        <span class="ps-2">support@canabid.com</span>
+                    </div>
+                    <div class="d-flex align-items-center lorem mt-2">
+                        <iconify-icon icon="ic:round-phone" style="color: white;" class="mt-2 " width="20"></iconify-icon>
+                        <span class="ps-2 mt-2">+1 123-456-7890</span>
+                    </div>
+                    <div class="mt-4">
+                        <h5>Connect with us</h5>
+                        <div class="d-flex align-items-center">
+                            <iconify-icon icon="basil:facebook-solid" style="color: white;" width="26"></iconify-icon>
+                            <iconify-icon icon="fe:google-plus" style="color: white;" width="26" class="ms-3"></iconify-icon>
+                            <iconify-icon icon="jam:linkedin" style="color: white;" width="26" class="ms-3"></iconify-icon>
+                            <iconify-icon icon="ant-design:twitter-outlined" style="color: white;" width="26" class="ms-3"></iconify-icon>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="d-flex justify-content-between pb-5 lorem">
+                <span>&copy;2022 canabid.com, all right reserved</span>
+                <span><a href="" class="text-white my-1 mb-4">Privacy policy</a></span>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="footer mt-3 d-md-none">
+        <div class="text-center pt-3">
+            <img src="/assets/logo.png" alt="" width="200">
+        </div>
+        <div class="d-flex text-white container flex-column">
+            <span class="d-flex align-items-center you">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur
+            </span>
+            <div class="d-flex flex-column mt-3">
+                <h5>Quick Links</h5>
+                <span>Seller registration</span>
+                <span>Terms and conditions</span>
+                <span>About us</span>
+                <span>Contact us</span>
+            </div>
+            <div class="d-flex flex-column mt-3">
+                <h5>Find us</h5>
+                <div class="d-flex align-items-center">
+                    <iconify-icon icon="foundation:mail" style="color: white;"></iconify-icon>
+                    <span class="ps-1">support@canabid.com</span>
+                </div>
+                <div class="d-flex align-items-center">
+                    <iconify-icon icon="ic:round-phone" style="color: white;" class="mt-2 "></iconify-icon>
+                    <span class="ps-1 mt-2">+1 123-456-7890</span>
+                </div>
+                <div class="mt-2">
+                    <h5>Connect with us</h5>
+                    <div class="d-flex">
+                        <iconify-icon icon="basil:facebook-solid" style="color: white;" width="28"></iconify-icon>
+                        <iconify-icon icon="fe:google-plus" style="color: white;" width="28" class="ms-2"></iconify-icon>
+                        <iconify-icon icon="jam:linkedin" style="color: white;" width="28" class="ms-2"></iconify-icon>
+                        <iconify-icon icon="ant-design:twitter-outlined" style="color: white;" width="28" class="ms-2"></iconify-icon>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="text-center">
+                <span>&copy;2022 canabid.com, all right reserved</span>
+            <a href="" class="text-white my-1 mb-4">Privacy policy</a>
+            </div>
+        </div>
+    </div>
+    <div class="footer mt-3 text-white  d-none d-md-block ">
+        <div class=" container pt-3">
+            <img src="/assets/logo.png" alt="" width="200">
+            <div class="d-flex">
+                <div class="col-5">
+                    <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                        do eiusmod tempor incididunt ut labore et dolore magna
+                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                        ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse
+                        cillum dolore eu fugiat nulla pariatur
+                    </span>
+                </div>
+                <div class="col-3 ms-5 d-flex flex-column">
+                        <h5>Quick Links</h5>
+                        <span>Seller registration</span>
+                        <span>Terms and conditions</span>
+                        <span>About us</span>
+                        <span>Contact us</span>
+                </div>
+                <div class="d-flex col ms-3 flex-column">
+                    <h5>Find us</h5>
+                    <div class="d-flex align-items-center">
+                        <iconify-icon icon="foundation:mail" style="color: white;"></iconify-icon>
+                        <span class="ps-1">support@canabid.com</span>
+                    </div>
+                    <div class="d-flex align-items-center">
+                        <iconify-icon icon="ic:round-phone" style="color: white;" class="mt-2 "></iconify-icon>
+                        <span class="ps-1 mt-2">+1 123-456-7890</span>
+                    </div>
+                    <div class="mt-2">
+                        <h5>Connect with us</h5>
+                        <div class="d-flex">
+                            <iconify-icon icon="basil:facebook-solid" style="color: white;" width="28"></iconify-icon>
+                            <iconify-icon icon="fe:google-plus" style="color: white;" width="28" class="ms-2"></iconify-icon>
+                            <iconify-icon icon="jam:linkedin" style="color: white;" width="28" class="ms-2"></iconify-icon>
+                            <iconify-icon icon="ant-design:twitter-outlined" style="color: white;" width="28" class="ms-2"></iconify-icon>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="d-flex justi">
+                <span>&copy;2022 canabid.com, all right reserved</span>
+            <a href="" class="text-white my-1 mb-4">Privacy policy</a>
+            </div>
+        </div>
+    </div> -->
+</body>
+</html>

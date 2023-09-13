@@ -1,0 +1,244 @@
+.bg-header{
+    background-image: linear-gradient(to bottom right,  #0d636a, #29867f);
+}
+.vr_1{
+    color: lightcyan;
+    opacity: 1 !important;
+    height: 32px;
+}
+.vr_2{
+    color: rgb(15, 13, 13);
+    opacity: 1 !important;
+    width: 2px !important;
+    height: 13px;
+}
+.live{
+    color:white;
+    font-size: 11px;
+    text-decoration: none;
+}
+.live_1{
+    font-size: 13px;
+}
+.green_id:hover{
+    background-image: linear-gradient(to bottom right,  #1eb592, #4aca6a);
+    border-radius: 5px;
+}
+.green_id_1{
+    background-image: linear-gradient(to bottom right,  #1eb592, #4aca6a);
+    font-size: 13px;
+}
+.gray{
+    color: gray;
+}
+.edit{
+    color: #52c6ac;
+}
+
+.home{
+    font-size: 13px;
+}
+.bg-gray{
+    background-color: #d0dde0;
+}
+.green_br{
+    border: #46c86e 1px solid;
+}
+.card{
+    box-shadow: 0 0 0.1em 0.1em rgba(0, 0, 0, 0.1);
+}
+.will{
+    color: #5ba15e;
+}
+@media screen and (min-width: 320px) {
+    .bg_image{
+        background-image: url(/assets/bgimg.jpeg);
+        height: 100px;
+    }
+    .overlay{
+        width: 100%;
+        height: 100%;
+        color: black;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    .place::placeholder{
+        color: #d0d1d1 !important;
+        font-size: 15px;
+    }
+}
+@media screen and (min-width:768px) {
+    .card_4{
+        width: 270px;
+        height: 970px !important;
+    }
+    .card_5{
+        width: 200px;
+        height: 310px !important;
+    }
+    .card_8{
+        width: 250px !important;
+        height: 325px !important;
+    }
+    .feed{
+        font-size: 13px;
+    }
+    .place::placeholder{
+        color: #d0d1d1 !important;
+        font-size: 12px;
+    }
+}
+@media screen and (min-width: 992px) {
+    .head_pad{
+        padding-left: 34px !important;
+    }
+    .container{
+        max-width: 900px !important;
+    }
+    .return_padding{
+        padding-top: 50px !important;
+    }
+    .card_1{
+        width: 600px;
+    }
+    .card_2{
+        width: 297px;
+    }
+    .bg_image{
+        background-image: url(/assets/bgimg.jpeg);
+        height: 170px;
+    }
+    .card_10{
+        width: 278px;
+    }
+    .overlay{
+        width: 100%;
+        height: 100%;
+        color: black;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    .card_4{
+        width: 300px;
+        height: 100px;
+    }
+    .card_6{
+        width: 800px;
+    }
+    .card_7{
+        width: 200px;
+        height: 330px !important;
+    }
+    .card_9{
+        width: 250px !important;
+        height: 335px !important;
+    }
+    .card_2{
+        width: 298px;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .container{
+        max-width: 1100px !important;
+    }
+    .card_10{
+        width: 360px;
+    }
+    .return_padding{
+        padding-top: 80px !important;
+    }
+    .card_1{
+        width: 810px;
+    }
+    .card_7{
+        width: 250px;
+        height: 330px !important;
+    } 
+    .card_2{
+        width: 357px;
+    }
+    .fs_1{
+        font-size: 22px;
+    }
+    .fas{
+        font-size: 15px;
+    }
+    .card_14{
+        height: 438px !important;
+    }
+}
+@media screen and (min-width: 1400px) {
+    .card_1{
+        width: 800px;
+    }
+    .card_2{
+        width: 364px;
+    }
+    .card_10{
+        width: 343px ;
+    }
+    .card_13{
+        width: 1120px;
+    }
+    .container{
+        max-width: 1107px !important;
+    }
+}
+.you{
+    font-size: 15px;
+}
+.footer{
+    background-color:  #146473;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.apparels{
+    font-size: 12px;
+}
+.dollars{
+    font-size: 12px;
+}
+.dollars_color{
+    color: #0b636a;}
+.card_5{
+    width: 200px;
+    height: 310px !important;
+}
+hr.order_hr{
+    height: 2px !important;
+    background: #a6abac;
+}
+.lorem{
+    font-size: 13px;
+}
+.input:checked{
+    accent-color: #1e7876;
+}
+.quick{
+    font-size: 20px;
+}
+body{
+    background-color: #f7f7f7 !important;
+}
+.bg_off{
+    background-image: linear-gradient(to bottom right,  #0d636a, #29867f);
+}
+.grow{
+    flex-grow: 1;
+}
+.fp{
+    height: 33px;
+}
+.hs{
+    height: 33px;
+}
+.return{
+    border:#479890 1px solid;
+    color:  #479890;
+}
